@@ -16,6 +16,7 @@
 		8625870A1EF781830007BAD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 862587091EF781830007BAD3 /* GoogleService-Info.plist */; };
 		8625870C1EF785AE0007BAD3 /* Facts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8625870B1EF785AE0007BAD3 /* Facts.csv */; };
 		8625870E1EF785F90007BAD3 /* FactArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8625870D1EF785F90007BAD3 /* FactArray.swift */; };
+		862CC0C21F47EBD3008A8C5A /* EdTriviaFacts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 862CC0C11F47EBD3008A8C5A /* EdTriviaFacts.csv */; };
 		864133331EF03C4100306792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133321EF03C4100306792 /* AppDelegate.swift */; };
 		864133351EF03C4100306792 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133341EF03C4100306792 /* HomeScreen.swift */; };
 		8641333A1EF03C4100306792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864133391EF03C4100306792 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		862587091EF781830007BAD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8625870B1EF785AE0007BAD3 /* Facts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facts.csv; sourceTree = "<group>"; };
 		8625870D1EF785F90007BAD3 /* FactArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactArray.swift; sourceTree = "<group>"; };
+		862CC0C11F47EBD3008A8C5A /* EdTriviaFacts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EdTriviaFacts.csv; sourceTree = "<group>"; };
 		8641332F1EF03C4100306792 /* FinishTheLyricsEdSheeran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinishTheLyricsEdSheeran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864133321EF03C4100306792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864133341EF03C4100306792 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				86A39E011EF6396500538F4F /* EasyLyrics.csv */,
 				86A39E021EF6396500538F4F /* HardLyrics.csv */,
 				8625870B1EF785AE0007BAD3 /* Facts.csv */,
+				862CC0C11F47EBD3008A8C5A /* EdTriviaFacts.csv */,
 				86129F371EF24C7000A8B7C8 /* csv.swift */,
 				86129F351EF2439900A8B7C8 /* Question.swift */,
 				8625870D1EF785F90007BAD3 /* FactArray.swift */,
@@ -195,6 +198,7 @@
 				8625870C1EF785AE0007BAD3 /* Facts.csv in Resources */,
 				86A39E041EF6396500538F4F /* HardLyrics.csv in Resources */,
 				8625870A1EF781830007BAD3 /* GoogleService-Info.plist in Resources */,
+				862CC0C21F47EBD3008A8C5A /* EdTriviaFacts.csv in Resources */,
 				8641333D1EF03C4100306792 /* LaunchScreen.storyboard in Resources */,
 				86A39E031EF6396500538F4F /* EasyLyrics.csv in Resources */,
 				8641333A1EF03C4100306792 /* Assets.xcassets in Resources */,

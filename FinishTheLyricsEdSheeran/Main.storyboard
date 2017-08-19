@@ -30,34 +30,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-W8-9AQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-BR-XjA">
-                                <rect key="frame" x="32" y="53.5" width="256" height="159.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-BR-XjA">
+                                <rect key="frame" x="24" y="49" width="272" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hwd-rb-ASq"/>
+                                </constraints>
                                 <string key="text">Ed
 Sheeran
 Trivia!</string>
-                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="61"/>
+                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="67"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="100"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ed Sheeran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaE-Re-CaC">
-                                <rect key="frame" x="88" y="221" width="144" height="23"/>
-                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="26"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="40"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Difficulty:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-dW-HvV">
-                                <rect key="frame" x="24" y="276" width="272" height="21"/>
+                                <rect key="frame" x="24" y="286" width="272" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYc-gS-GMO" customClass="GADBannerView">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYc-gS-GMO" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -66,7 +60,7 @@ Trivia!</string>
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1m-aj-lNg">
-                                <rect key="frame" x="98" y="305" width="124" height="29"/>
+                                <rect key="frame" x="98" y="315" width="124" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="vxK-h7-wAV"/>
                                 </constraints>
@@ -80,7 +74,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="yZS-B0-OwE">
-                                <rect key="frame" x="45" y="378" width="230" height="29"/>
+                                <rect key="frame" x="45" y="388" width="230" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="mn8-Y6-XUi"/>
                                 </constraints>
@@ -96,7 +90,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-3o-Q3h" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="110" y="438" width="100" height="40"/>
+                                <rect key="frame" x="110" y="448" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Zdk-Bx-ihD"/>
@@ -111,7 +105,7 @@ Trivia!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUn-II-Lfe">
-                                <rect key="frame" x="24" y="349" width="288" height="21"/>
+                                <rect key="frame" x="24" y="359" width="288" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -126,21 +120,19 @@ Trivia!</string>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="HN2-rZ-fdp"/>
                             <constraint firstItem="nhB-W8-9AQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JKe-Sr-tek"/>
                             <constraint firstItem="B1m-aj-lNg" firstAttribute="top" secondItem="Nva-dW-HvV" secondAttribute="bottom" constant="8" id="O5Y-zi-ZO2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aF2-BR-XjA" secondAttribute="trailing" constant="16" id="Oyf-ha-zo9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aF2-BR-XjA" secondAttribute="trailing" constant="8" id="Oyf-ha-zo9"/>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="top" secondItem="B1m-aj-lNg" secondAttribute="bottom" priority="500" constant="16" id="QRU-kO-Pkp"/>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="Sdb-fq-sUz"/>
                             <constraint firstItem="Nva-dW-HvV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="T1v-ow-mWn"/>
-                            <constraint firstItem="Nva-dW-HvV" firstAttribute="top" secondItem="KaE-Re-CaC" secondAttribute="bottom" constant="32" id="UCj-ej-d0Y"/>
-                            <constraint firstItem="KaE-Re-CaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xcp-CV-Uti"/>
-                            <constraint firstItem="aF2-BR-XjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="YeU-N8-VJA"/>
-                            <constraint firstItem="KaE-Re-CaC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-52" id="YmA-iy-wE3"/>
+                            <constraint firstItem="aF2-BR-XjA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-135" id="VQG-a2-M23"/>
+                            <constraint firstItem="aF2-BR-XjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YeU-N8-VJA"/>
                             <constraint firstAttribute="trailing" secondItem="nhB-W8-9AQ" secondAttribute="trailing" id="aY9-FU-9Ov"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nva-dW-HvV" secondAttribute="trailing" constant="8" id="iRq-MT-tS6"/>
                             <constraint firstItem="P23-3o-Q3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifm-yh-YVb"/>
+                            <constraint firstItem="Nva-dW-HvV" firstAttribute="top" secondItem="aF2-BR-XjA" secondAttribute="bottom" constant="37" id="jI3-FI-7l7"/>
                             <constraint firstItem="nhB-W8-9AQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kjW-ei-YjX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYc-gS-GMO" secondAttribute="bottom" id="ksY-JO-MpN"/>
                             <constraint firstItem="B1m-aj-lNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkI-61-dnx"/>
-                            <constraint firstItem="KaE-Re-CaC" firstAttribute="top" secondItem="aF2-BR-XjA" secondAttribute="bottom" priority="100" constant="8" id="nUF-zO-FDQ"/>
                             <constraint firstItem="yZS-B0-OwE" firstAttribute="top" secondItem="yUn-II-Lfe" secondAttribute="bottom" constant="8" id="rTY-Sh-3Aw"/>
                         </constraints>
                     </view>
@@ -167,12 +159,6 @@ Trivia!</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="COS-jS-p6g">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1" text="Name The Song:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff4-WX-VEe">
-                                <rect key="frame" x="24" y="24" width="272" height="30"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-wD-HW2" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
                                 <rect key="frame" x="24" y="304" width="272" height="40"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
@@ -238,7 +224,6 @@ Trivia!</string>
                             <constraint firstAttribute="trailingMargin" secondItem="rKb-Ka-p4V" secondAttribute="trailing" constant="16" id="58r-yx-S3i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U4h-wD-HW2" secondAttribute="trailing" constant="8" id="8MP-32-mWQ"/>
                             <constraint firstItem="U4h-wD-HW2" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="Cxs-u3-odo"/>
-                            <constraint firstItem="rKb-Ka-p4V" firstAttribute="top" secondItem="ff4-WX-VEe" secondAttribute="bottom" id="Mtk-kz-aZC"/>
                             <constraint firstItem="8MB-MI-VOH" firstAttribute="top" secondItem="Uli-l1-bck" secondAttribute="bottom" constant="24" id="Mwq-Vo-5h5"/>
                             <constraint firstItem="J7d-We-MNi" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="PQE-ZG-Edz"/>
                             <constraint firstItem="dfX-t8-Jqh" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="RcU-OP-y3H"/>
@@ -249,13 +234,10 @@ Trivia!</string>
                             <constraint firstItem="COS-jS-p6g" firstAttribute="top" secondItem="Sn4-7H-Lgy" secondAttribute="top" id="co5-VY-oFo"/>
                             <constraint firstItem="U4h-wD-HW2" firstAttribute="top" secondItem="rKb-Ka-p4V" secondAttribute="bottom" id="ej1-Wj-FEE"/>
                             <constraint firstItem="U4h-wD-HW2" firstAttribute="centerY" secondItem="Sn4-7H-Lgy" secondAttribute="centerY" constant="40" id="fSH-GJ-NrZ"/>
-                            <constraint firstItem="ff4-WX-VEe" firstAttribute="top" secondItem="Mt6-3e-KpZ" secondAttribute="bottom" priority="100" constant="4" id="g30-OI-zxy"/>
                             <constraint firstItem="rKb-Ka-p4V" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="16" id="i4a-Ni-Z7g"/>
                             <constraint firstItem="Uli-l1-bck" firstAttribute="centerX" secondItem="Sn4-7H-Lgy" secondAttribute="centerX" id="l8k-wf-BNU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="K0f-jW-HGu" secondAttribute="trailing" constant="8" id="mfL-0E-oGb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ff4-WX-VEe" secondAttribute="trailing" constant="8" id="qo6-Jw-Hxc"/>
                             <constraint firstItem="K0f-jW-HGu" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="rMd-xZ-SLD"/>
-                            <constraint firstItem="ff4-WX-VEe" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="rcS-cB-bIs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J7d-We-MNi" secondAttribute="trailing" constant="8" id="tsH-zc-kxr"/>
                             <constraint firstItem="K0f-jW-HGu" firstAttribute="top" secondItem="dfX-t8-Jqh" secondAttribute="bottom" constant="16" id="uXM-WR-aHR"/>
                             <constraint firstItem="J7d-We-MNi" firstAttribute="top" secondItem="U4h-wD-HW2" secondAttribute="bottom" constant="16" id="y1u-OM-auO"/>
@@ -315,7 +297,7 @@ Trivia!</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="More Lyrics Available!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-Pu-Jmp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="More Questions Available!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-Pu-Jmp">
                                 <rect key="frame" x="16" y="424" width="288" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="C0m-8q-AEu"/>
@@ -389,7 +371,7 @@ Trivia!</string>
                         <outlet property="greeting" destination="Sck-Dw-DSg" id="hUW-L4-x2f"/>
                         <outlet property="ofQuestions" destination="jJD-JM-zje" id="e4i-8J-e5A"/>
                         <outlet property="pointsLbl" destination="N5f-Xj-aEQ" id="14j-L6-gqf"/>
-                        <segue destination="VJg-9d-YjB" kind="show" identifier="TryAgainSegue" id="WbK-Ga-eK8"/>
+                        <segue destination="VJg-9d-YjB" kind="show" identifier="TryAgainSegue" id="X1W-ad-bgi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyc-dZ-6wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
