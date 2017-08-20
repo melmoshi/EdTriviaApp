@@ -2,7 +2,7 @@
 //  Question.swift
 //  FinishTheLyricsEdSheeran
 //
-//  Created by Mel and Sand on 2017-06-14.
+//  Created by Mel and Sand on 2017-08-14.
 //  Copyright © 2017 Moshi Media. All rights reserved.
 //
 
@@ -55,6 +55,7 @@ class Question {
 
 var questions = [Question]()
 var newArray = [Question]()
+var accuracy = true
 
 
 

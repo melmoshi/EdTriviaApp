@@ -21,13 +21,17 @@ class AnswerButton: UIButton {
     override var isHighlighted: Bool {
         didSet {
             if isHighlighted {
-                backgroundColor = UIColor(red: 1/255, green: 149/255, blue: 227/255, alpha: 1)
+                if accuracy {
+                    backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0.5)
+                } else {
+                    backgroundColor = UIColor(red:243/255, green:70/255, blue: 74/255, alpha: 0.5)
+                }
             } else {
                 backgroundColor = UIColor(red: 1/255, green: 149/255, blue: 227/255, alpha: 0)
             }
         }
     }
     
-
+        ///2017-08-19 notes: This works, but it only works a question late. This info loads before "accuracy" is assigned to question.
 
 }

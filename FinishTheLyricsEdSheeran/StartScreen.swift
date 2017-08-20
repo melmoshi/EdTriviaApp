@@ -13,9 +13,6 @@ import GameKit
 var points = 0
     //tracks number of right answers
 
-
-
-
 class StartScreen: UIViewController {
     
     @IBOutlet weak var answerBtn1: AnswerButton!
@@ -45,9 +42,9 @@ class StartScreen: UIViewController {
         points = 0
         
         if levelChosen == "Easy" {
-            parseCSV(difficulty: "EasyLyrics")
+            parseCSV(difficulty: "EdTriviaFacts") //need to change
         } else {
-            parseCSV(difficulty: "HardLyrics")
+            parseCSV(difficulty: "EdTriviaFacts") //need to change
         }
         
         updateArray()
@@ -108,9 +105,12 @@ class StartScreen: UIViewController {
             
             print("RIGHT")
             points += 1
+            accuracy = true
+            
             
         } else {
             print("WRONG!!!!!!")
+            accuracy = false
         }
         
         if (questionsSeen <= (questionsAllowed - 1)) {
@@ -136,4 +136,11 @@ func randomNum() -> Int {
     //Creates a random number to call from entree array
 }
 
+func backgroundColor() {
+    
+    if accuracy {
+        //AnswerButton.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0.5)
+    }
+     /////NOTES: This is my idea to adding background color. Finish Later!
+}
 
