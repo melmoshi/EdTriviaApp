@@ -90,9 +90,8 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 
                 let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
                 
-                post.setInitialText("I scored \(points) of 25 points on 'Guess the Ed Sheeran Lyrics!'")
-                post.add(UIImage(named: "img.jpg"))
-                    //ADD IMAGE!!!
+                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
+                post.add(UIImage(named: "img.jpg")) //<--------------------
                 
                 self.present(post, animated: true, completion: nil)
                 
@@ -117,7 +116,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 
                 let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
                 
-                post.setInitialText("I scored \(points) of 25 points on 'Guess the Ed Sheeran Lyrics!'")
+                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
                 post.add(UIImage(named: "img.jpg"))
                 //ADD IMAGE!!!
                 
@@ -156,9 +155,13 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
     
     @IBAction func tryAgainPressed(_ sender: Any) {
         
+        questions = []
+        
         if interstitialAd != nil {
             if interstitialAd!.isReady {
                 interstitialAd?.present(fromRootViewController: self)
+            } else {
+                performSegue(withIdentifier: "TryAgainSegue", sender: self)
             }
         }
         

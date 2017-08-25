@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  FinishTheLyricsEdSheeran
+//  EdSheeranTrivia
 //
 //  Created by Mel and Sand on 2017-06-13.
 //  Copyright © 2017 Moshi Media. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 import GoogleMobileAds
 
 
-var levelChosen = "Easy"
+var levelChosen: Bool = true  //TRUE MEANS EASY
 var questionsAllowed = 15
 
 class HomeScreen: UIViewController, GADBannerViewDelegate {
@@ -45,11 +45,13 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
     @IBAction func difficultyToggle(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
-            levelChosen = "Easy"
+            levelChosen = true  //(easy)
+            print("Easy")
         }
         
         if sender.selectedSegmentIndex == 1 {
-            levelChosen = "Hard"
+            levelChosen = false  //(hard)
+            print("HArd")
         }
     }
     

@@ -16,7 +16,6 @@ var points = 0
 class StartScreen: UIViewController {
     
     @IBOutlet weak var answerBtn1: AnswerButton!
-        //  //  //Review notes.. Does this do anything???
     
     
     @IBOutlet weak var questionLbl: UILabel!
@@ -41,11 +40,13 @@ class StartScreen: UIViewController {
         
         points = 0
         
-        if levelChosen == "Easy" {
-            parseCSV(difficulty: "EdTriviaFacts") //need to change
+        if levelChosen == true {
+            parseCSV(csv: "EdTriviaEasy")
         } else {
-            parseCSV(difficulty: "EdTriviaFacts") //need to change
+            parseCSV(csv: "EdTriviaHard")
         }
+         print(questions.count)
+        
         
         updateArray()
             //replaces "=" with commas in the array
@@ -106,12 +107,14 @@ class StartScreen: UIViewController {
             print("RIGHT")
             points += 1
             accuracy = true
-            
+                        
             
         } else {
             print("WRONG!!!!!!")
             accuracy = false
+            
         }
+        
         
         if (questionsSeen <= (questionsAllowed - 1)) {
             newQuestion()
@@ -136,11 +139,13 @@ func randomNum() -> Int {
     //Creates a random number to call from entree array
 }
 
-func backgroundColor() {
-    
-    if accuracy {
-        //AnswerButton.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0.5)
-    }
-     /////NOTES: This is my idea to adding background color. Finish Later!
-}
+
+
+//func backgroundColor() {
+//    
+//    if accuracy {
+//        AnswerButton.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0.5)
+//    }
+//     /////NOTES: This is my idea to adding background color. Finish Later!
+//}
 

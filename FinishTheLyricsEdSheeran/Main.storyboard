@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,35 +24,34 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nhB-W8-9AQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-BR-XjA">
-                                <rect key="frame" x="24" y="49" width="272" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-BR-XjA">
+                                <rect key="frame" x="28" y="168" width="358" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Hwd-rb-ASq"/>
+                                    <constraint firstAttribute="height" constant="100" id="Hwd-rb-ASq">
+                                        <variation key="widthClass=regular" constant="200"/>
+                                    </constraint>
                                 </constraints>
-                                <string key="text">Ed
-Sheeran
-Trivia!</string>
-                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="67"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="120"/>
+                                <color key="textColor" red="0.36731237123451188" green="0.28358301931801455" blue="0.75265704314720816" alpha="0.94236943493150682" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="100"/>
+                                    <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="190"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Difficulty:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-dW-HvV">
-                                <rect key="frame" x="24" y="286" width="272" height="21"/>
+                                <rect key="frame" x="28" y="378" width="358" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYc-gS-GMO" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <rect key="frame" x="47" y="686" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ADZ-Zl-bhD"/>
@@ -60,7 +59,7 @@ Trivia!</string>
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1m-aj-lNg">
-                                <rect key="frame" x="98" y="315" width="124" height="29"/>
+                                <rect key="frame" x="145" y="407" width="124" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="vxK-h7-wAV"/>
                                 </constraints>
@@ -74,7 +73,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="yZS-B0-OwE">
-                                <rect key="frame" x="45" y="388" width="230" height="29"/>
+                                <rect key="frame" x="92" y="480" width="230" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="mn8-Y6-XUi"/>
                                 </constraints>
@@ -90,7 +89,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-3o-Q3h" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="110" y="448" width="100" height="40"/>
+                                <rect key="frame" x="157" y="540" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Zdk-Bx-ihD"/>
@@ -105,17 +104,48 @@ Trivia!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUn-II-Lfe">
-                                <rect key="frame" x="24" y="359" width="288" height="21"/>
+                                <rect key="frame" x="28" y="451" width="374" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
+                                <rect key="frame" x="73.333333333333343" y="268" width="267.66666666666663" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
+                                        <variation key="widthClass=regular" constant="700"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="131" id="wx8-tE-n2M">
+                                        <variation key="widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="80"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ERZ-0Q-QcB"/>
+                                        <exclude reference="wx8-tE-n2M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ERZ-0Q-QcB"/>
+                                        <include reference="wx8-tE-n2M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="150"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.58494127516778527" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HYc-gS-GMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7BB-Cb-fmS"/>
                             <constraint firstItem="P23-3o-Q3h" firstAttribute="top" secondItem="yZS-B0-OwE" secondAttribute="bottom" constant="32" id="9Ph-v8-1Ig"/>
+                            <constraint firstItem="dS4-WG-k5C" firstAttribute="top" secondItem="aF2-BR-XjA" secondAttribute="bottom" id="BoO-eS-bgD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nhB-W8-9AQ" secondAttribute="bottom" id="ECv-LU-bYq"/>
+                            <constraint firstItem="dS4-WG-k5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GK6-Nd-Dfw"/>
                             <constraint firstItem="yZS-B0-OwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H12-j5-xW8"/>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="HN2-rZ-fdp"/>
                             <constraint firstItem="nhB-W8-9AQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JKe-Sr-tek"/>
@@ -124,17 +154,28 @@ Trivia!</string>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="top" secondItem="B1m-aj-lNg" secondAttribute="bottom" priority="500" constant="16" id="QRU-kO-Pkp"/>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="Sdb-fq-sUz"/>
                             <constraint firstItem="Nva-dW-HvV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="T1v-ow-mWn"/>
-                            <constraint firstItem="aF2-BR-XjA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-135" id="VQG-a2-M23"/>
+                            <constraint firstItem="aF2-BR-XjA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="VQG-a2-M23"/>
                             <constraint firstItem="aF2-BR-XjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YeU-N8-VJA"/>
                             <constraint firstAttribute="trailing" secondItem="nhB-W8-9AQ" secondAttribute="trailing" id="aY9-FU-9Ov"/>
+                            <constraint firstItem="Nva-dW-HvV" firstAttribute="top" secondItem="dS4-WG-k5C" secondAttribute="bottom" constant="40" id="hcR-zD-kc1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nva-dW-HvV" secondAttribute="trailing" constant="8" id="iRq-MT-tS6"/>
                             <constraint firstItem="P23-3o-Q3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifm-yh-YVb"/>
-                            <constraint firstItem="Nva-dW-HvV" firstAttribute="top" secondItem="aF2-BR-XjA" secondAttribute="bottom" constant="37" id="jI3-FI-7l7"/>
                             <constraint firstItem="nhB-W8-9AQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kjW-ei-YjX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYc-gS-GMO" secondAttribute="bottom" id="ksY-JO-MpN"/>
                             <constraint firstItem="B1m-aj-lNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkI-61-dnx"/>
+                            <constraint firstItem="dS4-WG-k5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lne-73-KQv"/>
                             <constraint firstItem="yZS-B0-OwE" firstAttribute="top" secondItem="yUn-II-Lfe" secondAttribute="bottom" constant="8" id="rTY-Sh-3Aw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GK6-Nd-Dfw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="GK6-Nd-Dfw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="bannerAd" destination="HYc-gS-GMO" id="ch6-vc-s1A"/>
@@ -153,63 +194,80 @@ Trivia!</string>
                         <viewControllerLayoutGuide type="bottom" id="8MB-MI-VOH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sn4-7H-Lgy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="COS-jS-p6g">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-wD-HW2" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="24" y="304" width="272" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <rect key="frame" x="28" y="390" width="358" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Hearts Don't Break Around Here">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="k5X-sL-DdG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-We-MNi" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="24" y="360" width="272" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <rect key="frame" x="28" y="442" width="358" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Galway Girl">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="pzr-sc-37h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfX-t8-Jqh" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="24" y="416" width="272" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <rect key="frame" x="28" y="494" width="358" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Don't">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="SA7-7C-jRN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-jW-HGu" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="24" y="472" width="272" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <rect key="frame" x="28" y="546" width="358" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Castle on the Hill">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="pcH-7e-30n"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On the summer day when I proposed, I made that wedding ring from dentist gold" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-Ka-p4V">
-                                <rect key="frame" x="32" y="54" width="256" height="250"/>
+                                <rect key="frame" x="36" y="140" width="342" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="O8z-ku-2ED"/>
+                                    <constraint firstAttribute="height" constant="250" id="O8z-ku-2ED">
+                                        <variation key="widthClass=regular" constant="350"/>
+                                    </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="37"/>
+                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="50"/>
+                                </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-l1-bck">
-                                <rect key="frame" x="132.5" y="534" width="55" height="10"/>
+                                <rect key="frame" x="179.66666666666663" y="702" width="55" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10.5" id="kVZ-ux-Amp"/>
                                     <constraint firstAttribute="width" constant="55" id="re7-BT-HhE"/>
@@ -218,22 +276,10 @@ Trivia!</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCk-iX-kz5" userLabel="Castle on the Hill Backgrounf" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="24" y="472" width="272" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
-                                <state key="normal" title="Castle on the Hill">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="IPG-4q-NXm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.73333333333333328" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="rKb-Ka-p4V" secondAttribute="trailing" constant="16" id="58r-yx-S3i"/>
-                            <constraint firstItem="tCk-iX-kz5" firstAttribute="centerY" secondItem="Sn4-7H-Lgy" secondAttribute="centerY" id="75O-ZG-F4A"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U4h-wD-HW2" secondAttribute="trailing" constant="8" id="8MP-32-mWQ"/>
                             <constraint firstItem="U4h-wD-HW2" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="Cxs-u3-odo"/>
                             <constraint firstItem="8MB-MI-VOH" firstAttribute="top" secondItem="Uli-l1-bck" secondAttribute="bottom" constant="24" id="Mwq-Vo-5h5"/>
@@ -250,7 +296,6 @@ Trivia!</string>
                             <constraint firstItem="Uli-l1-bck" firstAttribute="centerX" secondItem="Sn4-7H-Lgy" secondAttribute="centerX" id="l8k-wf-BNU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="K0f-jW-HGu" secondAttribute="trailing" constant="8" id="mfL-0E-oGb"/>
                             <constraint firstItem="K0f-jW-HGu" firstAttribute="leading" secondItem="Sn4-7H-Lgy" secondAttribute="leadingMargin" constant="8" id="rMd-xZ-SLD"/>
-                            <constraint firstItem="tCk-iX-kz5" firstAttribute="centerX" secondItem="Sn4-7H-Lgy" secondAttribute="centerX" id="tUF-Fd-JGh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J7d-We-MNi" secondAttribute="trailing" constant="8" id="tsH-zc-kxr"/>
                             <constraint firstItem="K0f-jW-HGu" firstAttribute="top" secondItem="dfX-t8-Jqh" secondAttribute="bottom" constant="16" id="uXM-WR-aHR"/>
                             <constraint firstItem="J7d-We-MNi" firstAttribute="top" secondItem="U4h-wD-HW2" secondAttribute="bottom" constant="16" id="y1u-OM-auO"/>
@@ -277,14 +322,14 @@ Trivia!</string>
                         <viewControllerLayoutGuide type="bottom" id="Wpm-lk-X5Y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Qo-Hv-HFB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7O4-l9-VZl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-Xj-aEQ">
-                                <rect key="frame" x="24" y="112" width="272" height="120"/>
+                                <rect key="frame" x="28" y="196" width="358" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="j2v-pb-qQ9"/>
                                 </constraints>
@@ -293,25 +338,25 @@ Trivia!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="You correctly answered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqU-8y-v3W">
-                                <rect key="frame" x="24" y="68" width="272" height="28"/>
+                                <rect key="frame" x="28" y="152" width="358" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Greeting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sck-Dw-DSg">
-                                <rect key="frame" x="24" y="24" width="272" height="36"/>
+                                <rect key="frame" x="28" y="108" width="358" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Of __ Questions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-JM-zje">
-                                <rect key="frame" x="24" y="232" width="272" height="28"/>
+                                <rect key="frame" x="28" y="316" width="358" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="More Questions Available!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-Pu-Jmp">
-                                <rect key="frame" x="16" y="424" width="288" height="35"/>
+                                <rect key="frame" x="20" y="508" width="374" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="C0m-8q-AEu"/>
                                 </constraints>
@@ -320,7 +365,7 @@ Trivia!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-xj-usn" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="85" y="467" width="150" height="40"/>
+                                <rect key="frame" x="132" y="551" width="150" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="kZM-aN-bm7"/>
@@ -336,7 +381,7 @@ Trivia!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-yf-0xY" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="47.5" y="280" width="225" height="40"/>
+                                <rect key="frame" x="94.666666666666686" y="364" width="225" height="40"/>
                                 <color key="backgroundColor" red="0.36862745098039218" green="0.23536063544545333" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0Rt-40-QNc"/>
@@ -400,14 +445,14 @@ Trivia!</string>
                         <viewControllerLayoutGuide type="bottom" id="Gq8-l6-CHW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9bG-vB-7vC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-dp-J4m">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="rKu-fk-ZUb">
-                                <rect key="frame" x="45" y="390" width="230" height="29"/>
+                                <rect key="frame" x="92" y="474" width="230" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="Bqa-1F-j5u"/>
                                     <constraint firstAttribute="height" constant="28" id="niJ-vw-Zaj"/>
@@ -425,7 +470,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEM-Z5-FJC">
-                                <rect key="frame" x="60" y="363" width="200" height="24"/>
+                                <rect key="frame" x="107" y="447" width="200" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="3sR-Lj-ARA"/>
                                     <constraint firstAttribute="width" constant="200" id="FsW-Xl-Njt"/>
@@ -435,7 +480,7 @@ Trivia!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dki-F7-BhA" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
-                                <rect key="frame" x="110" y="450" width="100" height="40"/>
+                                <rect key="frame" x="157" y="534" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Vfc-md-wa0"/>
@@ -450,7 +495,7 @@ Trivia!</string>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-dd-Ed8">
-                                <rect key="frame" x="98" y="311" width="124" height="29"/>
+                                <rect key="frame" x="145" y="395" width="124" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="0OM-ez-gIf"/>
                                     <constraint firstAttribute="width" constant="124" id="awE-bi-ewP"/>
@@ -466,7 +511,7 @@ Trivia!</string>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Difficulty:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-Xh-n4i">
-                                <rect key="frame" x="60" y="285" width="200" height="24"/>
+                                <rect key="frame" x="107" y="369" width="200" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="d1V-Ch-aua"/>
                                     <constraint firstAttribute="height" constant="24" id="t61-jF-Fn9"/>
@@ -476,13 +521,13 @@ Trivia!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did You Know?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE9-x7-Rzz">
-                                <rect key="frame" x="16" y="68" width="288" height="28"/>
+                                <rect key="frame" x="20" y="152" width="374" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ed Began singing in the church choir at the age of 4, and learned guitar at a young age as well" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWm-re-pWE">
-                                <rect key="frame" x="24" y="96" width="272" height="80"/>
+                                <rect key="frame" x="28" y="180" width="358" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="gBG-57-nw3"/>
                                 </constraints>
@@ -491,7 +536,7 @@ Trivia!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try Again:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjO-HJ-mNf">
-                                <rect key="frame" x="85" y="221" width="150" height="40"/>
+                                <rect key="frame" x="132" y="305" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="LM8-JK-gNO"/>
                                     <constraint firstAttribute="height" constant="40" id="jmC-w0-2tv"/>

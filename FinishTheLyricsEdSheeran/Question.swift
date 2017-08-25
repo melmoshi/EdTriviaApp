@@ -60,9 +60,9 @@ var accuracy = true
 
 
     //Add items from CSV to an array (of Class Question)
-func parseCSV (difficulty: String) {
+func parseCSV (csv: String) {
     
-    let path = Bundle.main.path(forResource: difficulty, ofType: "csv")!
+    let path = Bundle.main.path(forResource: csv, ofType: "csv")!
     
     do {
         

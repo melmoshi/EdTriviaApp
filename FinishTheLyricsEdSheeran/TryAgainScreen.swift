@@ -30,11 +30,11 @@ class TryAgainScreen: UIViewController {
     @IBAction func difficultyToggle2(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
-            levelChosen = "Easy"
+            levelChosen = true
         }
         
         if sender.selectedSegmentIndex == 1 {
-            levelChosen = "Hard"
+            levelChosen = false
         }
     }
     
@@ -53,7 +53,7 @@ class TryAgainScreen: UIViewController {
     }
 
     func gameDefualtSettings() {
-        levelChosen = "Easy"
+        levelChosen = true
         questionsAllowed = 15
     }
     
