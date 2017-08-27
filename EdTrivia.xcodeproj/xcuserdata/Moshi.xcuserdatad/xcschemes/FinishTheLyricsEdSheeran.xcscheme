@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8641332E1EF03C4100306792"
-               BuildableName = "FinishTheLyricsEdSheeran.app"
-               BlueprintName = "FinishTheLyricsEdSheeran"
-               ReferencedContainer = "container:FinishTheLyricsEdSheeran.xcodeproj">
+               BuildableName = "EdTrivia.app"
+               BlueprintName = "EdTrivia"
+               ReferencedContainer = "container:EdTrivia.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8641332E1EF03C4100306792"
-            BuildableName = "FinishTheLyricsEdSheeran.app"
-            BlueprintName = "FinishTheLyricsEdSheeran"
-            ReferencedContainer = "container:FinishTheLyricsEdSheeran.xcodeproj">
+            BuildableName = "EdTrivia.app"
+            BlueprintName = "EdTrivia"
+            ReferencedContainer = "container:EdTrivia.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8641332E1EF03C4100306792"
-            BuildableName = "FinishTheLyricsEdSheeran.app"
-            BlueprintName = "FinishTheLyricsEdSheeran"
-            ReferencedContainer = "container:FinishTheLyricsEdSheeran.xcodeproj">
+            BuildableName = "EdTrivia.app"
+            BlueprintName = "EdTrivia"
+            ReferencedContainer = "container:EdTrivia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8641332E1EF03C4100306792"
-            BuildableName = "FinishTheLyricsEdSheeran.app"
-            BlueprintName = "FinishTheLyricsEdSheeran"
-            ReferencedContainer = "container:FinishTheLyricsEdSheeran.xcodeproj">
+            BuildableName = "EdTrivia.app"
+            BlueprintName = "EdTrivia"
+            ReferencedContainer = "container:EdTrivia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

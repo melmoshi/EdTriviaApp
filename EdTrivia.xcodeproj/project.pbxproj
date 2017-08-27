@@ -38,7 +38,7 @@
 		862587091EF781830007BAD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8625870B1EF785AE0007BAD3 /* Facts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facts.csv; sourceTree = "<group>"; };
 		8625870D1EF785F90007BAD3 /* FactArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactArray.swift; sourceTree = "<group>"; };
-		8641332F1EF03C4100306792 /* FinishTheLyricsEdSheeran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinishTheLyricsEdSheeran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8641332F1EF03C4100306792 /* EdTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864133321EF03C4100306792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864133341EF03C4100306792 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		864133391EF03C4100306792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */,
-				864133311EF03C4100306792 /* FinishTheLyricsEdSheeran */,
+				864133311EF03C4100306792 /* EdTrivia */,
 				864133301EF03C4100306792 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		864133301EF03C4100306792 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8641332F1EF03C4100306792 /* FinishTheLyricsEdSheeran.app */,
+				8641332F1EF03C4100306792 /* EdTrivia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		864133311EF03C4100306792 /* FinishTheLyricsEdSheeran */ = {
+		864133311EF03C4100306792 /* EdTrivia */ = {
 			isa = PBXGroup;
 			children = (
 				86A39E0F1EF7067600538F4F /* Main.storyboard */,
@@ -95,6 +95,7 @@
 				8641333E1EF03C4100306792 /* Info.plist */,
 				862587091EF781830007BAD3 /* GoogleService-Info.plist */,
 			);
+			name = EdTrivia;
 			path = FinishTheLyricsEdSheeran;
 			sourceTree = "<group>";
 		};
@@ -134,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8641332E1EF03C4100306792 /* FinishTheLyricsEdSheeran */ = {
+		8641332E1EF03C4100306792 /* EdTrivia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 864133411EF03C4100306792 /* Build configuration list for PBXNativeTarget "FinishTheLyricsEdSheeran" */;
+			buildConfigurationList = 864133411EF03C4100306792 /* Build configuration list for PBXNativeTarget "EdTrivia" */;
 			buildPhases = (
 				8641332B1EF03C4100306792 /* Sources */,
 				8641332C1EF03C4100306792 /* Frameworks */,
@@ -146,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = FinishTheLyricsEdSheeran;
+			name = EdTrivia;
 			productName = FinishTheLyricsEdSheeran;
-			productReference = 8641332F1EF03C4100306792 /* FinishTheLyricsEdSheeran.app */;
+			productReference = 8641332F1EF03C4100306792 /* EdTrivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8641332A1EF03C4100306792 /* Build configuration list for PBXProject "FinishTheLyricsEdSheeran" */;
+			buildConfigurationList = 8641332A1EF03C4100306792 /* Build configuration list for PBXProject "EdTrivia" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8641332E1EF03C4100306792 /* FinishTheLyricsEdSheeran */,
+				8641332E1EF03C4100306792 /* EdTrivia */,
 			);
 		};
 /* End PBXProject section */
@@ -368,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8641332A1EF03C4100306792 /* Build configuration list for PBXProject "FinishTheLyricsEdSheeran" */ = {
+		8641332A1EF03C4100306792 /* Build configuration list for PBXProject "EdTrivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8641333F1EF03C4100306792 /* Debug */,
@@ -377,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		864133411EF03C4100306792 /* Build configuration list for PBXNativeTarget "FinishTheLyricsEdSheeran" */ = {
+		864133411EF03C4100306792 /* Build configuration list for PBXNativeTarget "EdTrivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				864133421EF03C4100306792 /* Debug */,

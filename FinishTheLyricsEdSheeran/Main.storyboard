@@ -18,7 +18,7 @@
         <!--Home Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeScreen" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreen" customModule="EdTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -88,7 +88,7 @@
                                     <action selector="questionNumberToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="iYP-qn-nJ5"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-3o-Q3h" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-3o-Q3h" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="157" y="540" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
-                                <rect key="frame" x="73.333333333333343" y="268" width="267.66666666666663" height="70"/>
+                                <rect key="frame" x="74" y="268" width="267.66666666666669" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
                                         <variation key="widthClass=regular" constant="700"/>
@@ -188,7 +188,7 @@
         <!--Start Screen-->
         <scene sceneID="a7m-LO-NnA">
             <objects>
-                <viewController id="eAO-Od-sDL" customClass="StartScreen" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eAO-Od-sDL" customClass="StartScreen" customModule="EdTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mt6-3e-KpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="8MB-MI-VOH"/>
@@ -200,7 +200,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdSheeranBackground" translatesAutoresizingMaskIntoConstraints="NO" id="COS-jS-p6g">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-wD-HW2" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-wD-HW2" customClass="AnswerButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="28" y="390" width="358" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Hearts Don't Break Around Here">
@@ -213,7 +213,7 @@
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="k5X-sL-DdG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-We-MNi" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7d-We-MNi" customClass="AnswerButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="28" y="442" width="358" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Galway Girl">
@@ -226,7 +226,7 @@
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="pzr-sc-37h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfX-t8-Jqh" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfX-t8-Jqh" customClass="AnswerButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="28" y="494" width="358" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Don't">
@@ -239,7 +239,7 @@
                                     <action selector="btnPressed:" destination="eAO-Od-sDL" eventType="touchUpInside" id="SA7-7C-jRN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-jW-HGu" customClass="AnswerButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-jW-HGu" customClass="AnswerButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="28" y="546" width="358" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="Castle on the Hill">
@@ -267,7 +267,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-l1-bck">
-                                <rect key="frame" x="179.66666666666663" y="702" width="55" height="10"/>
+                                <rect key="frame" x="179.66666666666666" y="702" width="55" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10.5" id="kVZ-ux-Amp"/>
                                     <constraint firstAttribute="width" constant="55" id="re7-BT-HhE"/>
@@ -316,7 +316,7 @@
         <!--Points Screen-->
         <scene sceneID="3Wx-IF-ngw">
             <objects>
-                <viewController id="1vU-4u-P01" customClass="PointsScreen" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1vU-4u-P01" customClass="PointsScreen" customModule="EdTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a53-uL-Z1G"/>
                         <viewControllerLayoutGuide type="bottom" id="Wpm-lk-X5Y"/>
@@ -364,7 +364,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-xj-usn" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-xj-usn" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="132" y="551" width="150" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -380,7 +380,7 @@
                                     <action selector="tryAgainPressed:" destination="1vU-4u-P01" eventType="touchUpInside" id="pHl-q4-QfE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-yf-0xY" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-yf-0xY" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="94.666666666666686" y="364" width="225" height="40"/>
                                 <color key="backgroundColor" red="0.36862745098039218" green="0.23536063544545333" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -439,7 +439,7 @@
         <!--Try Again Screen-->
         <scene sceneID="Vsh-Mo-db0">
             <objects>
-                <viewController id="VJg-9d-YjB" customClass="TryAgainScreen" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VJg-9d-YjB" customClass="TryAgainScreen" customModule="EdTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OIn-Z1-ciy"/>
                         <viewControllerLayoutGuide type="bottom" id="Gq8-l6-CHW"/>
@@ -479,7 +479,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dki-F7-BhA" customClass="RoundButton" customModule="FinishTheLyricsEdSheeran" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dki-F7-BhA" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
                                 <rect key="frame" x="157" y="534" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
