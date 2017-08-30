@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
-                                <rect key="frame" x="74" y="268" width="267.66666666666669" height="70"/>
+                                <rect key="frame" x="73" y="268" width="268" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
                                         <variation key="widthClass=regular" constant="700"/>
@@ -267,7 +267,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-l1-bck">
-                                <rect key="frame" x="179.66666666666666" y="702" width="55" height="10"/>
+                                <rect key="frame" x="180" y="702" width="55" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10.5" id="kVZ-ux-Amp"/>
                                     <constraint firstAttribute="width" constant="55" id="re7-BT-HhE"/>
@@ -303,7 +303,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answerBtn1" destination="U4h-wD-HW2" id="fvY-Pi-bND"/>
+                        <outlet property="btn1" destination="U4h-wD-HW2" id="mgw-fe-hqc"/>
+                        <outlet property="btn2" destination="J7d-We-MNi" id="BcT-iF-L8x"/>
+                        <outlet property="btn3" destination="dfX-t8-Jqh" id="kWv-sB-1oh"/>
+                        <outlet property="btn4" destination="K0f-jW-HGu" id="PHV-4j-IOh"/>
                         <outlet property="chapterLbl" destination="Uli-l1-bck" id="eK2-t0-0Dr"/>
                         <outlet property="questionLbl" destination="rKb-Ka-p4V" id="QJ5-wV-DNg"/>
                         <segue destination="1vU-4u-P01" kind="show" identifier="showScore" id="u7f-Xs-5tK"/>
@@ -381,7 +384,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-yf-0xY" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
-                                <rect key="frame" x="94.666666666666686" y="364" width="225" height="40"/>
+                                <rect key="frame" x="95" y="364" width="225" height="40"/>
                                 <color key="backgroundColor" red="0.36862745098039218" green="0.23536063544545333" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0Rt-40-QNc"/>

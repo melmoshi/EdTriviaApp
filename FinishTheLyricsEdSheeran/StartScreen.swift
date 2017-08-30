@@ -15,7 +15,14 @@ var points = 0
 
 class StartScreen: UIViewController {
     
-    @IBOutlet weak var answerBtn1: AnswerButton!
+
+    @IBOutlet weak var btn1: AnswerButton!
+    
+    @IBOutlet weak var btn2: AnswerButton!
+    
+    @IBOutlet weak var btn3: AnswerButton!
+    
+    @IBOutlet weak var btn4: AnswerButton!
     
     
     @IBOutlet weak var questionLbl: UILabel!
@@ -25,7 +32,7 @@ class StartScreen: UIViewController {
     @IBOutlet weak var chapterLbl: UILabel!
         //Label that declares what question you're on (1/10)
     
-    var currentQuestion = 1
+    var currentQuestion = randomNum()
         //current question in the array 
     
     var rightAnswerPlacement = 0
@@ -45,13 +52,15 @@ class StartScreen: UIViewController {
         } else {
             parseCSV(csv: "EdTriviaHard")
         }
-         print(questions.count)
         
         
         updateArray()
             //replaces "=" with commas in the array
         
+        currentQuestion = randomNum()
+        
         newQuestion()
+            //Updates question
         
         chapterLbl.text = "\(questionsSeen)/\(questionsAllowed)"
     }
@@ -107,17 +116,28 @@ class StartScreen: UIViewController {
             print("RIGHT")
             points += 1
             accuracy = true
-                        
+            sender.backgroundColor = UIColor(red: 192/255, green: 216/255, blue: 155/255, alpha: 0.5)
             
         } else {
             print("WRONG!!!!!!")
             accuracy = false
-            
+            sender.backgroundColor = UIColor(red: 255/255, green: 99/255, blue: 71/255, alpha: 0.6)
         }
         
         
         if (questionsSeen <= (questionsAllowed - 1)) {
-            newQuestion()
+            
+            let when = DispatchTime.now() + 0.5 // change to to desired number of seconds
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.newQuestion()
+                self.backgroundColorNormal()
+            }
+            
+            
+            
+            
+            
+            
         } else {
             //when users have seen all questions
             performSegue(withIdentifier: "showScore", sender: self)
@@ -126,6 +146,17 @@ class StartScreen: UIViewController {
         chapterLbl.text = "\(questionsSeen) / \(questionsAllowed)"
         
     }
+    
+    
+    
+    func backgroundColorNormal() {
+        btn1.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0)
+        btn2.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0)
+        btn3.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0)
+        btn4.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0)
+        
+    }
+
     
 }
 
@@ -141,11 +172,4 @@ func randomNum() -> Int {
 
 
 
-//func backgroundColor() {
-//    
-//    if accuracy {
-//        AnswerButton.backgroundColor = UIColor(red:134/255, green:223/255, blue: 121/255, alpha: 0.5)
-//    }
-//     /////NOTES: This is my idea to adding background color. Finish Later!
-//}
 
