@@ -72,6 +72,7 @@ class StartScreen: UIViewController {
         questionLbl.text = newArray[currentQuestion].question
         
         questionsSeen += 1
+        chapterLbl.text = "\(questionsSeen) / \(questionsAllowed)"
         
         rightAnswerPlacement = Int(arc4random_uniform(4)) + 1
         
@@ -125,9 +126,11 @@ class StartScreen: UIViewController {
         }
         
         
+        
+        
         if (questionsSeen <= (questionsAllowed - 1)) {
             
-            let when = DispatchTime.now() + 0.5 // change to to desired number of seconds
+            let when = DispatchTime.now() + 0.45 // change to to desired number of seconds
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.newQuestion()
                 self.backgroundColorNormal()
@@ -143,7 +146,7 @@ class StartScreen: UIViewController {
             performSegue(withIdentifier: "showScore", sender: self)
         }
      
-        chapterLbl.text = "\(questionsSeen) / \(questionsAllowed)"
+
         
     }
     

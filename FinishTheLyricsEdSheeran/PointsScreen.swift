@@ -156,6 +156,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
     @IBAction func tryAgainPressed(_ sender: Any) {
         
         questions = []
+        newArray = []
         
         if interstitialAd != nil {
             if interstitialAd!.isReady {
