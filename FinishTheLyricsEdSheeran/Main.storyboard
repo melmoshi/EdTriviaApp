@@ -81,7 +81,6 @@
                                     <segment title="10"/>
                                     <segment title="15"/>
                                     <segment title="20"/>
-                                    <segment title="25"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -462,7 +461,6 @@
                                     <segment title="10"/>
                                     <segment title="15"/>
                                     <segment title="20"/>
-                                    <segment title="25"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -586,6 +584,6 @@
         <image name="EdSheeranBackground" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oPk-L0-H4t"/>
+        <segue reference="JBG-QD-5Sl"/>
     </inferredMetricsTieBreakers>
 </document>

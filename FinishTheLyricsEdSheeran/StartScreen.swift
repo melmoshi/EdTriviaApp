@@ -138,9 +138,6 @@ class StartScreen: UIViewController {
             
             
             
-            
-            
-            
         } else {
             //when users have seen all questions
             performSegue(withIdentifier: "showScore", sender: self)
