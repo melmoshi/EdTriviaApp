@@ -8,6 +8,7 @@
 
 import UIKit
 import GameKit
+import StoreKit
 
 
     //Default Values for questionsAllowed and levelChosen?
@@ -24,6 +25,14 @@ class TryAgainScreen: UIViewController {
         gameDefualtSettings()
         
         factLbl.text = factArray[randomNumFact()]
+        
+        if gamesPlayed == 1 {
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+            } else {
+                // Fallback on earlier versions
+            }
+        }
     }
 
 
@@ -51,6 +60,15 @@ class TryAgainScreen: UIViewController {
         }
         
     }
+    
+    @IBAction func startBtnPressed(_ sender: Any) {
+        gamesPlayed += 1
+        print("You have played \(gamesPlayed) games.")
+        
+        
+        ////IMPLEMENT REWARD VIDEO HERE
+    }
+    
 
     func gameDefualtSettings() {
         levelChosen = true

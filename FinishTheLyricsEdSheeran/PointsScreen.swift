@@ -91,11 +91,38 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
                 
                 post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
-                post.add(UIImage(named: "img.jpg")) //<--------------------
+                
+                if self.score < 0.45 {
+                    post.add(UIImage(named: "General.jpg"))
+                } else if self.score >= 0.45 && self.score < 0.50 {
+                    post.add(UIImage(named: "50.jpg"))
+                } else if self.score >= 0.50 && self.score < 0.55 {
+                    post.add(UIImage(named: "55.jpg"))
+                } else if self.score >= 0.55 && self.score < 60 {
+                    post.add(UIImage(named: "60.jpg"))
+                } else if self.score >= 0.60 && self.score < 65 {
+                    post.add(UIImage(named: "65.jpg"))
+                } else if self.score >= 0.65 && self.score < 70 {
+                    post.add(UIImage(named: "70.jpg"))
+                } else if self.score >= 0.70 && self.score < 75 {
+                    post.add(UIImage(named: "75.jpg"))
+                } else if self.score >= 0.75 && self.score < 80 {
+                    post.add(UIImage(named: "80.jpg"))
+                } else if self.score >= 0.80 && self.score < 85 {
+                    post.add(UIImage(named: "85.jpg"))
+                } else if self.score >= 0.85 && self.score < 90 {
+                    post.add(UIImage(named: "90.jpg"))
+                } else if self.score >= 0.90 && self.score < 93 {
+                    post.add(UIImage(named: "93.jpg"))
+                } else if self.score >= 0.93 && self.score < 98 {
+                    post.add(UIImage(named: "95.jpg"))
+                } else if self.score == 1.0 {
+                    post.add(UIImage(named: "100.jpg"))
+                } else {
+                    post.add(UIImage(named: "General.jpg"))
+                }
                 
                 self.present(post, animated: true, completion: nil)
-                
-                
                 
                 
             } else {
@@ -117,8 +144,37 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
                 
                 post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
-                post.add(UIImage(named: "img.jpg"))
-                //ADD IMAGE!!!
+                
+                
+                if self.score < 0.45 {
+                    post.add(UIImage(named: "General.jpg"))
+                } else if self.score >= 0.45 && self.score < 0.50 {
+                    post.add(UIImage(named: "50.jpg"))
+                } else if self.score >= 0.50 && self.score < 0.55 {
+                    post.add(UIImage(named: "55.jpg"))
+                } else if self.score >= 0.55 && self.score < 60 {
+                    post.add(UIImage(named: "60.jpg"))
+                } else if self.score >= 0.60 && self.score < 65 {
+                    post.add(UIImage(named: "65.jpg"))
+                } else if self.score >= 0.65 && self.score < 70 {
+                    post.add(UIImage(named: "70.jpg"))
+                } else if self.score >= 0.70 && self.score < 75 {
+                    post.add(UIImage(named: "75.jpg"))
+                } else if self.score >= 0.75 && self.score < 80 {
+                    post.add(UIImage(named: "80.jpg"))
+                } else if self.score >= 0.80 && self.score < 85 {
+                    post.add(UIImage(named: "85.jpg"))
+                } else if self.score >= 0.85 && self.score < 90 {
+                    post.add(UIImage(named: "90.jpg"))
+                } else if self.score >= 0.90 && self.score < 93 {
+                    post.add(UIImage(named: "93.jpg"))
+                } else if self.score >= 0.93 && self.score < 98 {
+                    post.add(UIImage(named: "95.jpg"))
+                } else if self.score == 1.0 {
+                    post.add(UIImage(named: "100.jpg"))
+                } else {
+                    post.add(UIImage(named: "General.jpg"))
+                }
                 
                 self.present(post, animated: true, completion: nil)
                 
@@ -153,6 +209,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
     }
     
     
+    
     @IBAction func tryAgainPressed(_ sender: Any) {
         
         questions = []
@@ -167,6 +224,8 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         }
         
     }
+    
+
     
     
     
