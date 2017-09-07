@@ -16,6 +16,7 @@
 		8625870A1EF781830007BAD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 862587091EF781830007BAD3 /* GoogleService-Info.plist */; };
 		8625870C1EF785AE0007BAD3 /* Facts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8625870B1EF785AE0007BAD3 /* Facts.csv */; };
 		8625870E1EF785F90007BAD3 /* FactArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8625870D1EF785F90007BAD3 /* FactArray.swift */; };
+		863FF4B21F61C3420078713C /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4B11F61C3420078713C /* AppLovinSDK.framework */; };
 		864133331EF03C4100306792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133321EF03C4100306792 /* AppDelegate.swift */; };
 		864133351EF03C4100306792 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133341EF03C4100306792 /* HomeScreen.swift */; };
 		8641333A1EF03C4100306792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864133391EF03C4100306792 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		862587091EF781830007BAD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8625870B1EF785AE0007BAD3 /* Facts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facts.csv; sourceTree = "<group>"; };
 		8625870D1EF785F90007BAD3 /* FactArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactArray.swift; sourceTree = "<group>"; };
+		863FF4B11F61C3420078713C /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
 		8641332F1EF03C4100306792 /* EdTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864133321EF03C4100306792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864133341EF03C4100306792 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863FF4B21F61C3420078713C /* AppLovinSDK.framework in Frameworks */,
 				86A39E0A1EF641EB00538F4F /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +73,7 @@
 				86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */,
 				864133311EF03C4100306792 /* EdTrivia */,
 				864133301EF03C4100306792 /* Products */,
+				863FF4B11F61C3420078713C /* AppLovinSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,9 +342,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 				);
 				INFOPLIST_FILE = FinishTheLyricsEdSheeran/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1/AppLovin\\ SDK\\ Static\\ Library\\ (old\\ distribution\\ method)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.FinishTheLyricsEdSheeran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -356,9 +365,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 				);
 				INFOPLIST_FILE = FinishTheLyricsEdSheeran/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1/AppLovin\\ SDK\\ Static\\ Library\\ (old\\ distribution\\ method)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.FinishTheLyricsEdSheeran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
