@@ -491,7 +491,6 @@
                                 </state>
                                 <connections>
                                     <action selector="startBtnPressed:" destination="VJg-9d-YjB" eventType="touchUpInside" id="AtT-JQ-V05"/>
-                                    <segue destination="eAO-Od-sDL" kind="show" id="JBG-QD-5Sl"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-dd-Ed8">
@@ -574,6 +573,7 @@
                     </view>
                     <connections>
                         <outlet property="factLbl" destination="rWm-re-pWE" id="v9d-Np-7Iy"/>
+                        <segue destination="eAO-Od-sDL" kind="showDetail" identifier="RestartSegue" id="48V-gW-05u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6E-4Q-6n9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -585,6 +585,6 @@
         <image name="EdSheeranBackground" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JBG-QD-5Sl"/>
+        <segue reference="48V-gW-05u"/>
     </inferredMetricsTieBreakers>
 </document>

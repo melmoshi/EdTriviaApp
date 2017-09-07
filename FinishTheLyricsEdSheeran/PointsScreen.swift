@@ -214,6 +214,10 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         
         questions = []
         newArray = []
+        print("You have played \(gamesPlayed) games.")
+        gamesPlayed += 1
+        print("You about to play game #\(gamesPlayed)")
+        
         
         if interstitialAd != nil {
             if interstitialAd!.isReady {

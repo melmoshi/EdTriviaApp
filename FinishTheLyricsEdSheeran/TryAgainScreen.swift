@@ -9,31 +9,52 @@
 import UIKit
 import GameKit
 import StoreKit
-import AVfoundation
-import
+import GoogleMobileAds
+
+
+
 
     //Default Values for questionsAllowed and levelChosen?
 
-class TryAgainScreen: UIViewController {
+class TryAgainScreen: UIViewController, GADRewardBasedVideoAdDelegate {
+    
+    
+    /// Tells the delegate that the reward based video ad has rewarded the user.
+    func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didRewardUserWith reward: GADAdReward) {
+        reward.r
+        print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+    }
+    
+    func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
+        print("AD RECIEVED")
+    }
+
     
     @IBOutlet weak var factLbl: UILabel!
     
-    
-    
     override func viewDidLoad() {
+        
+        GADRewardBasedVideoAd.sharedInstance().delegate = self
+        //setting up reward ad delegate
+        
         super.viewDidLoad()
+        
+        loadRewardAd() 
         
         gameDefualtSettings()
         
         factLbl.text = factArray[randomNumFact()]
         
-        if gamesPlayed == 1 {
+        if gamesPlayed == 3 {
             if #available(iOS 10.3, *) {
                 SKStoreReviewController.requestReview()
             } else {
                 // Fallback on earlier versions
             }
         }
+        
+
+        
     }
 
 
@@ -63,11 +84,17 @@ class TryAgainScreen: UIViewController {
     }
     
     @IBAction func startBtnPressed(_ sender: Any) {
-        gamesPlayed += 1
-        print("You have played \(gamesPlayed) games.")
         
+        ///Reward Video Here:
+        if GADRewardBasedVideoAd.sharedInstance().isReady {
+            GADRewardBasedVideoAd.sharedInstance().present(fromRootViewController: self)
+        } else {
+            print("NOT READY")
+            performSegue(withIdentifier: "RestartSegue", sender: self)
+        }
         
-        ////IMPLEMENT REWARD VIDEO HERE
+
+        
     }
     
 
@@ -84,4 +111,18 @@ class TryAgainScreen: UIViewController {
         //Creates a random number to call from factArray
     }
     
+    func loadRewardAd() {
+        
+        
+        
+        if !GADRewardBasedVideoAd.sharedInstance().isReady {
+            print("STARTING LOAD")
+            let requestReward = GADRequest()
+            requestReward.testDevices = [kGADSimulatorID]
+            GADRewardBasedVideoAd.sharedInstance().load(requestReward, withAdUnitID: "ca-app-pub-8878911622308650/8097706161")
+        }
+    }    
+    
+    
 }
+

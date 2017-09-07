@@ -12,7 +12,7 @@ import GoogleMobileAds
 
 var levelChosen: Bool = true  //TRUE MEANS EASY
 var questionsAllowed = 15
-var gamesPlayed = 0
+var gamesPlayed = 1
 
 class HomeScreen: UIViewController, GADBannerViewDelegate {
     
