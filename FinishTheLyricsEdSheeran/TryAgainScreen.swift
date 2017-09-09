@@ -32,7 +32,7 @@ class TryAgainScreen: UIViewController, GADRewardBasedVideoAdDelegate {
     
         //What happens when closing the ad
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("REWARD HAS BEEN EARNED")
+        print("AD HAS BEEN CLOSED")
         loadRewardAd()
         animateOut()
         
@@ -70,6 +70,8 @@ class TryAgainScreen: UIViewController, GADRewardBasedVideoAdDelegate {
         
         
         super.viewDidLoad()
+        
+        videoWatched = false
         
         gameDefualtSettings()
         factLbl.text = factArray[randomNumFact()]
