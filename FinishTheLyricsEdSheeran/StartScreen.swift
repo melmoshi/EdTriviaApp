@@ -17,13 +17,9 @@ class StartScreen: UIViewController {
     
 
     @IBOutlet weak var btn1: AnswerButton!
-    
     @IBOutlet weak var btn2: AnswerButton!
-    
     @IBOutlet weak var btn3: AnswerButton!
-    
     @IBOutlet weak var btn4: AnswerButton!
-    
     
     @IBOutlet weak var questionLbl: UILabel!
         //Question Label

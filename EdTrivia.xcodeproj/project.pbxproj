@@ -33,6 +33,7 @@
 		8641333D1EF03C4100306792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8641333B1EF03C4100306792 /* LaunchScreen.storyboard */; };
 		8641334A1EF07CEE00306792 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133491EF07CEE00306792 /* RoundButton.swift */; };
 		8641334C1EF07F2800306792 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641334B1EF07F2800306792 /* StartScreen.swift */; };
+		867EB2E21F64A27A00927006 /* PopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867EB2E11F64A27A00927006 /* PopUpButton.swift */; };
 		86A39E0A1EF641EB00538F4F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */; };
 		86A39E101EF7067600538F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A39E0F1EF7067600538F4F /* Main.storyboard */; };
 		86F788EF1F4F504D00E49175 /* EdTriviaHard.csv in Resources */ = {isa = PBXBuildFile; fileRef = 86F788EE1F4F504D00E49175 /* EdTriviaHard.csv */; };
@@ -70,6 +71,7 @@
 		8641333E1EF03C4100306792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864133491EF07CEE00306792 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8641334B1EF07F2800306792 /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		867EB2E11F64A27A00927006 /* PopUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpButton.swift; sourceTree = "<group>"; };
 		86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		86A39E0F1EF7067600538F4F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		86F788EE1F4F504D00E49175 /* EdTriviaHard.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EdTriviaHard.csv; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				864133491EF07CEE00306792 /* RoundButton.swift */,
 				862587031EF72C4F0007BAD3 /* AnswerButton.swift */,
+				867EB2E11F64A27A00927006 /* PopUpButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				86129F381EF24C7000A8B7C8 /* csv.swift in Sources */,
 				86129F3A1EF3086A00A8B7C8 /* PointsScreen.swift in Sources */,
 				8625870E1EF785F90007BAD3 /* FactArray.swift in Sources */,
+				867EB2E21F64A27A00927006 /* PopUpButton.swift in Sources */,
 				862587041EF72C4F0007BAD3 /* AnswerButton.swift in Sources */,
 				863FF4C91F61CB600078713C /* GADMAdapterAppLovinRewardBasedVideoAd.m in Sources */,
 				86129F361EF2439900A8B7C8 /* Question.swift in Sources */,

@@ -218,15 +218,13 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         gamesPlayed += 1
         print("You about to play game #\(gamesPlayed)")
         
-        
+        if gamesPlayed != 3 {
         if interstitialAd != nil {
             if interstitialAd!.isReady {
                 interstitialAd?.present(fromRootViewController: self)
-            } else {
-                performSegue(withIdentifier: "TryAgainSegue", sender: self)
-            }
-        }
-        
+            } else { performSegue(withIdentifier: "TryAgainSegue", sender: self) }
+        } else { performSegue(withIdentifier: "TryAgainSegue", sender: self) }
+        } else { performSegue(withIdentifier: "TryAgainSegue", sender: self) }
     }
     
 
