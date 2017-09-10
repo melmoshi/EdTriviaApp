@@ -162,15 +162,7 @@ class TryAgainScreen: UIViewController, GADRewardBasedVideoAdDelegate {
     }
     
     
-    func loadRewardAd() {
-        
-        if !GADRewardBasedVideoAd.sharedInstance().isReady {
-            print("STARTING LOAD")
-            let requestReward = GADRequest()
-            requestReward.testDevices = [kGADSimulatorID]
-            GADRewardBasedVideoAd.sharedInstance().load(requestReward, withAdUnitID: "ca-app-pub-8878911622308650/8097706161")
-        }
-    }
+
     
     
     func animateIn() {
@@ -218,11 +210,19 @@ class TryAgainScreen: UIViewController, GADRewardBasedVideoAdDelegate {
             self.errorHandleView.transform = CGAffineTransform.identity
         }
         
-        
-        
     }
     
     
+}
+
+func loadRewardAd() {
+    
+    if !GADRewardBasedVideoAd.sharedInstance().isReady {
+        print("STARTING LOAD")
+        let requestReward = GADRequest()
+        requestReward.testDevices = [kGADSimulatorID]
+        GADRewardBasedVideoAd.sharedInstance().load(requestReward, withAdUnitID: "ca-app-pub-8878911622308650/8097706161")
+    }
 }
 
 

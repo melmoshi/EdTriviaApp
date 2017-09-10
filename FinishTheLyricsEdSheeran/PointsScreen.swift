@@ -216,6 +216,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         newArray = []
         print("You have played \(gamesPlayed) games.")
         gamesPlayed += 1
+        storeGamesPlayed()
         print("You about to play game #\(gamesPlayed)")
         
         if gamesPlayed != 3 {

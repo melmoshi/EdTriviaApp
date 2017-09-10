@@ -16,6 +16,9 @@ var gamesPlayed = 1
 
 class HomeScreen: UIViewController, GADBannerViewDelegate {
     
+ 
+    @IBOutlet weak var maxWarningBtn: RoundButton!
+
     
     @IBOutlet weak var bannerAd: GADBannerView!
 
@@ -24,6 +27,35 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        loadRewardAd()
+        
+        if UserDefaults.standard.object(forKey: "lastSavedDate") == nil {
+            print("There is no saved date on file")
+            storeDate()
+            gamesPlayed = 1
+            storeGamesPlayed()
+        } else {
+            print("There is a date stored on Local Storage")
+            if checkTodaysDate() == UserDefaults.standard.object(forKey: "lastSavedDate") as? String {
+                print("You have already played today")
+                if let x = UserDefaults.standard.object(forKey: "numberOfGamesPlayed") as? Int {
+                    gamesPlayed = x
+                    
+                    if gamesPlayed > 3 {
+                        maxWarningBtn.isHidden = false
+                    }
+                    
+                    print("You have played \(gamesPlayed) games today")
+                    
+                }
+                
+            } else {
+                print("You are playing for the first time today")
+                gamesPlayed = 1
+                storeGamesPlayed()
+            }
+        }
         
         //BANNER AD:
         // Request
@@ -39,6 +71,12 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
         
         bannerAd.load(requestBanner)
         //
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if gamesPlayed > 3 {
+             performSegue(withIdentifier: "maxWarningBtnSeque", sender: self)
+        }
     }
     
     
@@ -71,5 +109,35 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
 
 }
 
+func storeGamesPlayed() {
+    UserDefaults.standard.set(gamesPlayed, forKey: "numberOfGamesPlayed")
+}
 
+func storeDate() {
+    
+    let date = NSDate()
+    let calendar = NSCalendar.current
+    let components = calendar.dateComponents([.day, .month, .year], from: date as Date)
+    
+    let todaysDate = "\(components.year!)-\(components.month!)-\(components.day!)"
+    
+    print(todaysDate)
+    
+    UserDefaults.standard.set(todaysDate, forKey: "lastSavedDate")
+    
+    print("Save date function has been ran")
+}
 
+func checkTodaysDate() -> String {
+    
+    let date = NSDate()
+    let calendar = NSCalendar.current
+    let components = calendar.dateComponents([.day, .month, .year], from: date as Date)
+    
+    let todaysDate = "\(components.year!)-\(components.month!)-\(components.day!)"
+    
+    print("today's date is \(todaysDate)")
+    
+    return todaysDate
+    
+}

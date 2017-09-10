@@ -102,6 +102,21 @@
                                     <segue destination="eAO-Od-sDL" kind="show" id="oPk-L0-H4t"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-Ik-jMl" userLabel="maxWarningBtn" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
+                                <rect key="frame" x="110" y="456" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fy4-UO-gNX"/>
+                                    <constraint firstAttribute="width" constant="100" id="zD1-SJ-has"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue!">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VJg-9d-YjB" kind="show" identifier="maxWarningBtnSeque" id="bGh-iF-D4C"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUn-II-Lfe">
                                 <rect key="frame" x="24" y="367" width="288" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
@@ -109,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
-                                <rect key="frame" x="26.5" y="184" width="268" height="70"/>
+                                <rect key="frame" x="26" y="184" width="268" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
                                         <variation key="widthClass=regular" constant="700"/>
@@ -143,6 +158,7 @@
                             <constraint firstItem="HYc-gS-GMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7BB-Cb-fmS"/>
                             <constraint firstItem="P23-3o-Q3h" firstAttribute="top" secondItem="yZS-B0-OwE" secondAttribute="bottom" constant="32" id="9Ph-v8-1Ig"/>
                             <constraint firstItem="dS4-WG-k5C" firstAttribute="top" secondItem="aF2-BR-XjA" secondAttribute="bottom" id="BoO-eS-bgD"/>
+                            <constraint firstItem="yhT-Ik-jMl" firstAttribute="width" secondItem="P23-3o-Q3h" secondAttribute="width" id="DlR-1V-xZF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nhB-W8-9AQ" secondAttribute="bottom" id="ECv-LU-bYq"/>
                             <constraint firstItem="dS4-WG-k5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GK6-Nd-Dfw"/>
                             <constraint firstItem="yZS-B0-OwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H12-j5-xW8"/>
@@ -153,16 +169,19 @@
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="top" secondItem="B1m-aj-lNg" secondAttribute="bottom" priority="500" constant="16" id="QRU-kO-Pkp"/>
                             <constraint firstItem="yUn-II-Lfe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="Sdb-fq-sUz"/>
                             <constraint firstItem="Nva-dW-HvV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="T1v-ow-mWn"/>
+                            <constraint firstItem="yhT-Ik-jMl" firstAttribute="centerX" secondItem="P23-3o-Q3h" secondAttribute="centerX" id="VFI-CC-t4a"/>
                             <constraint firstItem="aF2-BR-XjA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="VQG-a2-M23"/>
                             <constraint firstItem="aF2-BR-XjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YeU-N8-VJA"/>
                             <constraint firstAttribute="trailing" secondItem="nhB-W8-9AQ" secondAttribute="trailing" id="aY9-FU-9Ov"/>
                             <constraint firstItem="Nva-dW-HvV" firstAttribute="top" secondItem="dS4-WG-k5C" secondAttribute="bottom" constant="40" id="hcR-zD-kc1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nva-dW-HvV" secondAttribute="trailing" constant="8" id="iRq-MT-tS6"/>
                             <constraint firstItem="P23-3o-Q3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifm-yh-YVb"/>
+                            <constraint firstItem="yhT-Ik-jMl" firstAttribute="height" secondItem="P23-3o-Q3h" secondAttribute="height" id="itR-Gh-UED"/>
                             <constraint firstItem="nhB-W8-9AQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kjW-ei-YjX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYc-gS-GMO" secondAttribute="bottom" id="ksY-JO-MpN"/>
                             <constraint firstItem="B1m-aj-lNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkI-61-dnx"/>
                             <constraint firstItem="dS4-WG-k5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lne-73-KQv"/>
+                            <constraint firstItem="yhT-Ik-jMl" firstAttribute="centerY" secondItem="P23-3o-Q3h" secondAttribute="centerY" id="m06-1v-XuN"/>
                             <constraint firstItem="yZS-B0-OwE" firstAttribute="top" secondItem="yUn-II-Lfe" secondAttribute="bottom" constant="8" id="rTY-Sh-3Aw"/>
                         </constraints>
                         <variation key="default">
@@ -178,11 +197,12 @@
                     </view>
                     <connections>
                         <outlet property="bannerAd" destination="HYc-gS-GMO" id="ch6-vc-s1A"/>
+                        <outlet property="maxWarningBtn" destination="yhT-Ik-jMl" id="ey6-4B-Q3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="-154.27286356821591"/>
+            <point key="canvasLocation" x="-375" y="466"/>
         </scene>
         <!--Start Screen-->
         <scene sceneID="a7m-LO-NnA">
@@ -311,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12b-EL-Uup" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823.125" y="-155.28169014084509"/>
+            <point key="canvasLocation" x="495" y="175"/>
         </scene>
         <!--Points Screen-->
         <scene sceneID="3Wx-IF-ngw">
@@ -434,7 +454,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyc-dZ-6wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="-152"/>
+            <point key="canvasLocation" x="1320" y="-68"/>
         </scene>
         <!--Try Again Screen-->
         <scene sceneID="Vsh-Mo-db0">
@@ -660,7 +680,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-5A-T64">
-                            <rect key="frame" x="36.5" y="184" width="200" height="120"/>
+                            <rect key="frame" x="36.5" y="183.5" width="200" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="Vag-PE-tdL"/>
                                 <constraint firstAttribute="height" constant="120" id="uC9-S4-BD2"/>
@@ -673,7 +693,7 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY6-Qk-zmL">
-                            <rect key="frame" x="86" y="312" width="101" height="27"/>
+                            <rect key="frame" x="86" y="311.5" width="101" height="27"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="17"/>
                             <state key="normal" title="Watch Video">
                                 <color key="titleColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -683,9 +703,9 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnJ-t9-spe">
-                            <rect key="frame" x="100.5" y="345" width="72" height="27"/>
+                            <rect key="frame" x="119" y="344.5" width="35" height="27"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="17"/>
-                            <state key="normal" title="Exit App">
+                            <state key="normal" title="Exit">
                                 <color key="titleColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
@@ -693,13 +713,13 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks For Enjoying!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-MR-cln">
-                            <rect key="frame" x="17" y="24" width="239" height="21"/>
+                            <rect key="frame" x="17.5" y="24" width="239" height="20.5"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="23"/>
                             <color key="textColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdGuitar" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-i3-Rjd">
-                            <rect key="frame" x="46" y="69" width="181" height="97"/>
+                            <rect key="frame" x="46" y="68.5" width="181" height="97"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="97" id="FEQ-GM-rvR"/>
                                 <constraint firstAttribute="width" constant="181" id="Yrn-OO-lo1"/>
@@ -721,7 +741,7 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2336.25" y="-153.16901408450704"/>
+            <point key="canvasLocation" x="2188" y="-22"/>
         </scene>
     </scenes>
     <resources>
@@ -730,5 +750,6 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oPk-L0-H4t"/>
+        <segue reference="bGh-iF-D4C"/>
     </inferredMetricsTieBreakers>
 </document>
