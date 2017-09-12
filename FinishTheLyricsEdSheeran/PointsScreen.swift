@@ -138,7 +138,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
             
             print("SUCCESS")
             
-            //Checking if user has facebook
+            //Checking if user has twitter
             if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
                 
                 let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!

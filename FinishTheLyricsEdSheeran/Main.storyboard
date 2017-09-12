@@ -124,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
-                                <rect key="frame" x="26" y="184" width="268" height="70"/>
+                                <rect key="frame" x="26.5" y="184" width="268" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
                                         <variation key="widthClass=regular" constant="700"/>
@@ -654,7 +654,7 @@
                                 <action selector="moreTriviaBtnPressed:" destination="VJg-9d-YjB" eventType="touchUpInside" id="oUt-g3-40G"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No video right now." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdm-pI-mJ9">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No video available." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdm-pI-mJ9">
                             <rect key="frame" x="36" y="45" width="200" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="I03-rn-P7K"/>
@@ -676,7 +676,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" id="dkO-1y-NGU" userLabel="Pop-up">
-                    <rect key="frame" x="0.0" y="0.0" width="273" height="399"/>
+                    <rect key="frame" x="0.0" y="0.0" width="273" height="364"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-5A-T64">
@@ -702,18 +702,8 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                                 <action selector="watchVideoBtn:" destination="VJg-9d-YjB" eventType="touchUpInside" id="TlO-Bg-Wf8"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnJ-t9-spe">
-                            <rect key="frame" x="119" y="344.5" width="35" height="27"/>
-                            <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="17"/>
-                            <state key="normal" title="Exit">
-                                <color key="titleColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="exitAppBtn:" destination="VJg-9d-YjB" eventType="touchUpInside" id="d2N-KI-6nN"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks For Enjoying!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-MR-cln">
-                            <rect key="frame" x="17.5" y="24" width="239" height="20.5"/>
+                            <rect key="frame" x="17" y="24" width="239" height="20.5"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="23"/>
                             <color key="textColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -731,11 +721,9 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                         <constraint firstItem="P5U-i3-Rjd" firstAttribute="centerX" secondItem="dkO-1y-NGU" secondAttribute="centerX" id="4V9-gN-C1s"/>
                         <constraint firstItem="VY6-Qk-zmL" firstAttribute="centerX" secondItem="dkO-1y-NGU" secondAttribute="centerX" id="4VG-5a-Pcg"/>
                         <constraint firstItem="Dln-MR-cln" firstAttribute="centerX" secondItem="dkO-1y-NGU" secondAttribute="centerX" id="6Mp-hq-mDJ"/>
-                        <constraint firstItem="dnJ-t9-spe" firstAttribute="centerX" secondItem="dkO-1y-NGU" secondAttribute="centerX" id="FM5-NT-dhy"/>
                         <constraint firstItem="P5U-i3-Rjd" firstAttribute="top" secondItem="Dln-MR-cln" secondAttribute="bottom" constant="24" id="bjZ-Cj-KIs"/>
                         <constraint firstItem="UgD-5A-T64" firstAttribute="centerX" secondItem="dkO-1y-NGU" secondAttribute="centerX" id="cyd-iG-68B"/>
                         <constraint firstItem="UgD-5A-T64" firstAttribute="top" secondItem="P5U-i3-Rjd" secondAttribute="bottom" constant="18" id="eqv-OO-hmg"/>
-                        <constraint firstItem="dnJ-t9-spe" firstAttribute="top" secondItem="VY6-Qk-zmL" secondAttribute="bottom" constant="6" id="gAb-gk-rsy"/>
                         <constraint firstItem="VY6-Qk-zmL" firstAttribute="top" secondItem="UgD-5A-T64" secondAttribute="bottom" constant="8" id="shm-xb-bxP"/>
                         <constraint firstItem="Dln-MR-cln" firstAttribute="top" secondItem="dkO-1y-NGU" secondAttribute="top" constant="24" id="vSb-xL-UQZ"/>
                     </constraints>

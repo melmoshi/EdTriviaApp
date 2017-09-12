@@ -15,7 +15,6 @@ var questionsAllowed = 15
 var gamesPlayed = 1
 
 class HomeScreen: UIViewController, GADBannerViewDelegate {
-    
  
     @IBOutlet weak var maxWarningBtn: RoundButton!
 
@@ -54,6 +53,7 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
                 print("You are playing for the first time today")
                 gamesPlayed = 1
                 storeGamesPlayed()
+                storeDate()
             }
         }
         

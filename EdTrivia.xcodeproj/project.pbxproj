@@ -25,16 +25,29 @@
 		863FF4BF1F61C4AF0078713C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4BE1F61C4AF0078713C /* StoreKit.framework */; };
 		863FF4C11F61C4B70078713C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4C01F61C4B70078713C /* SystemConfiguration.framework */; };
 		863FF4C31F61C4BE0078713C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4C21F61C4BE0078713C /* UIKit.framework */; };
-		863FF4C51F61C4D00078713C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4C41F61C4D00078713C /* WebKit.framework */; };
-		863FF4C91F61CB600078713C /* GADMAdapterAppLovinRewardBasedVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 863FF4C81F61CB600078713C /* GADMAdapterAppLovinRewardBasedVideoAd.m */; };
+		863FF4C51F61C4D00078713C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863FF4C41F61C4D00078713C /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		863FF4C91F61CB600078713C /* GADMAdapterAppLovinRewardBasedVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 863FF4C81F61CB600078713C /* GADMAdapterAppLovinRewardBasedVideoAd.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		864133331EF03C4100306792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133321EF03C4100306792 /* AppDelegate.swift */; };
 		864133351EF03C4100306792 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133341EF03C4100306792 /* HomeScreen.swift */; };
 		8641333A1EF03C4100306792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864133391EF03C4100306792 /* Assets.xcassets */; };
 		8641333D1EF03C4100306792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8641333B1EF03C4100306792 /* LaunchScreen.storyboard */; };
 		8641334A1EF07CEE00306792 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864133491EF07CEE00306792 /* RoundButton.swift */; };
 		8641334C1EF07F2800306792 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641334B1EF07F2800306792 /* StartScreen.swift */; };
+		86491B7C1F6636BE003F13A5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86491B7B1F6636BE003F13A5 /* EventKit.framework */; };
+		86491B7E1F6636C5003F13A5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86491B7D1F6636C5003F13A5 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		86491B801F6636F8003F13A5 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86491B7F1F6636F8003F13A5 /* WatchConnectivity.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		867EB2E21F64A27A00927006 /* PopUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867EB2E11F64A27A00927006 /* PopUpButton.swift */; };
-		86A39E0A1EF641EB00538F4F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */; };
+		867EB5691F64FCA800927006 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5681F64FCA800927006 /* AudioToolbox.framework */; };
+		867EB56B1F64FCC100927006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB56A1F64FCC100927006 /* CoreLocation.framework */; };
+		867EB56D1F64FCC700927006 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB56C1F64FCC700927006 /* iAd.framework */; };
+		867EB56F1F64FCD500927006 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB56E1F64FCD500927006 /* MediaPlayer.framework */; };
+		867EB5711F64FCE100927006 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5701F64FCE100927006 /* MessageUI.framework */; };
+		867EB5731F64FCEE00927006 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5721F64FCED00927006 /* MobileCoreServices.framework */; };
+		867EB5751F64FCF300927006 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5741F64FCF300927006 /* PassKit.framework */; };
+		867EB5771F64FCFA00927006 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5761F64FCFA00927006 /* QuartzCore.framework */; };
+		867EB5791F64FD0700927006 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB5781F64FD0700927006 /* Social.framework */; };
+		867EB57B1F64FD1400927006 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB57A1F64FD1400927006 /* Twitter.framework */; };
+		867EB7DC1F66307600927006 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB7DB1F66307600927006 /* GoogleMobileAds.framework */; };
 		86A39E101EF7067600538F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A39E0F1EF7067600538F4F /* Main.storyboard */; };
 		86F788EF1F4F504D00E49175 /* EdTriviaHard.csv in Resources */ = {isa = PBXBuildFile; fileRef = 86F788EE1F4F504D00E49175 /* EdTriviaHard.csv */; };
 		86F788F11F4F507F00E49175 /* EdTriviaEasy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 86F788F01F4F507F00E49175 /* EdTriviaEasy.csv */; };
@@ -71,8 +84,21 @@
 		8641333E1EF03C4100306792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864133491EF07CEE00306792 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8641334B1EF07F2800306792 /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		86491B7B1F6636BE003F13A5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		86491B7D1F6636C5003F13A5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		86491B7F1F6636F8003F13A5 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		867EB2E11F64A27A00927006 /* PopUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpButton.swift; sourceTree = "<group>"; };
-		86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		867EB5681F64FCA800927006 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		867EB56A1F64FCC100927006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		867EB56C1F64FCC700927006 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		867EB56E1F64FCD500927006 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		867EB5701F64FCE100927006 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		867EB5721F64FCED00927006 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		867EB5741F64FCF300927006 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		867EB5761F64FCFA00927006 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		867EB5781F64FD0700927006 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		867EB57A1F64FD1400927006 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		867EB7DB1F66307600927006 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		86A39E0F1EF7067600538F4F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		86F788EE1F4F504D00E49175 /* EdTriviaHard.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EdTriviaHard.csv; sourceTree = "<group>"; };
 		86F788F01F4F507F00E49175 /* EdTriviaEasy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EdTriviaEasy.csv; sourceTree = "<group>"; };
@@ -83,9 +109,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86491B801F6636F8003F13A5 /* WatchConnectivity.framework in Frameworks */,
+				86491B7E1F6636C5003F13A5 /* JavaScriptCore.framework in Frameworks */,
+				86491B7C1F6636BE003F13A5 /* EventKit.framework in Frameworks */,
+				867EB57B1F64FD1400927006 /* Twitter.framework in Frameworks */,
+				867EB5791F64FD0700927006 /* Social.framework in Frameworks */,
+				867EB5771F64FCFA00927006 /* QuartzCore.framework in Frameworks */,
+				867EB5751F64FCF300927006 /* PassKit.framework in Frameworks */,
+				867EB5731F64FCEE00927006 /* MobileCoreServices.framework in Frameworks */,
+				867EB5711F64FCE100927006 /* MessageUI.framework in Frameworks */,
+				867EB56F1F64FCD500927006 /* MediaPlayer.framework in Frameworks */,
+				867EB56D1F64FCC700927006 /* iAd.framework in Frameworks */,
+				867EB56B1F64FCC100927006 /* CoreLocation.framework in Frameworks */,
+				867EB5691F64FCA800927006 /* AudioToolbox.framework in Frameworks */,
 				863FF4C51F61C4D00078713C /* WebKit.framework in Frameworks */,
 				863FF4C31F61C4BE0078713C /* UIKit.framework in Frameworks */,
 				863FF4C11F61C4B70078713C /* SystemConfiguration.framework in Frameworks */,
+				867EB7DC1F66307600927006 /* GoogleMobileAds.framework in Frameworks */,
 				863FF4BF1F61C4AF0078713C /* StoreKit.framework in Frameworks */,
 				863FF4BD1F61C4A80078713C /* CoreTelephony.framework in Frameworks */,
 				863FF4BB1F61C49D0078713C /* AdSupport.framework in Frameworks */,
@@ -93,7 +133,6 @@
 				863FF4B71F61C48C0078713C /* CoreGraphics.framework in Frameworks */,
 				863FF4B51F61C45F0078713C /* AVFoundation.framework in Frameworks */,
 				863FF4B21F61C3420078713C /* AppLovinSDK.framework in Frameworks */,
-				86A39E0A1EF641EB00538F4F /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +142,20 @@
 		863FF4B31F61C45F0078713C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86A39E091EF641EB00538F4F /* GoogleMobileAds.framework */,
+				86491B7F1F6636F8003F13A5 /* WatchConnectivity.framework */,
+				86491B7D1F6636C5003F13A5 /* JavaScriptCore.framework */,
+				86491B7B1F6636BE003F13A5 /* EventKit.framework */,
+				867EB7DB1F66307600927006 /* GoogleMobileAds.framework */,
+				867EB57A1F64FD1400927006 /* Twitter.framework */,
+				867EB5781F64FD0700927006 /* Social.framework */,
+				867EB5761F64FCFA00927006 /* QuartzCore.framework */,
+				867EB5741F64FCF300927006 /* PassKit.framework */,
+				867EB5721F64FCED00927006 /* MobileCoreServices.framework */,
+				867EB5701F64FCE100927006 /* MessageUI.framework */,
+				867EB56E1F64FCD500927006 /* MediaPlayer.framework */,
+				867EB56C1F64FCC700927006 /* iAd.framework */,
+				867EB56A1F64FCC100927006 /* CoreLocation.framework */,
+				867EB5681F64FCA800927006 /* AudioToolbox.framework */,
 				863FF4CA1F61CB930078713C /* AddLovin */,
 				863FF4C41F61C4D00078713C /* WebKit.framework */,
 				863FF4C21F61C4BE0078713C /* UIKit.framework */,
@@ -407,7 +459,12 @@
 				DEVELOPMENT_TEAM = RGJUGQYL7K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AdColony.framework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 				);
 				INFOPLIST_FILE = FinishTheLyricsEdSheeran/Info.plist;
@@ -415,8 +472,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1/AppLovin\\ SDK\\ Static\\ Library\\ (old\\ distribution\\ method)",
+					"$(PROJECT_DIR)/AdColony.framework",
 				);
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				"MACH_O_TYPE[arch=*]" = mh_execute;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.FinishTheLyricsEdSheeran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EdTrivia-Bridging-Header.h";
@@ -434,7 +496,12 @@
 				DEVELOPMENT_TEAM = RGJUGQYL7K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AdColony.framework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1",
 				);
 				INFOPLIST_FILE = FinishTheLyricsEdSheeran/Info.plist;
@@ -442,8 +509,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/applovin-ios-sdk-4.3.1/AppLovin\\ SDK\\ Static\\ Library\\ (old\\ distribution\\ method)",
+					"$(PROJECT_DIR)/AdColony.framework",
 				);
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				"MACH_O_TYPE[arch=*]" = mh_execute;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.moshimedia.FinishTheLyricsEdSheeran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EdTrivia-Bridging-Header.h";
