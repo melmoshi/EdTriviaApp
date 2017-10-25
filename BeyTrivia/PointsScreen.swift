@@ -34,7 +34,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         
         //Greeting:
         if score < 0.4 {
-            greeting.text = "Better Luck Next Time!"
+            greeting.text = "Try Again!"
         } else if score >= 0.4 && score < 0.60 {
             greeting.text = "Good Effort!"
         } else if score >= 0.6 && score < 0.9 {
@@ -49,7 +49,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
         pointsLbl.text = String(points)
         
         //Of Questions
-        ofQuestions.text = "Of \(questionsAllowed) Questions"
+        ofQuestions.text = "Of \(questionsAllowed) Questions!"
     }
     
     
