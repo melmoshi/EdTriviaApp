@@ -92,7 +92,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 
                 let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
                 
-                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
+                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Beyonce Trivia!")
                 
                 if self.score < 0.45 {
                     post.add(UIImage(named: "General.jpg"))
@@ -124,10 +124,6 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                     post.add(UIImage(named: "General.jpg"))
                 }
                 
-                self.present(post, animated: true, completion: nil)
-                
-                
-            } else {
                 //pop-up to say you're not connected!
                 self.showAlert(service: "Facebook")
             }
@@ -145,7 +141,7 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                 
                 let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
                 
-                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Ed Sheeran Trivia!")
+                post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Beyonce Trivia!")
                 
                 
                 if self.score < 0.45 {
