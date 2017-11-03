@@ -221,7 +221,7 @@ func loadRewardAd() {
         print("STARTING LOAD")
         let requestReward = GADRequest()
         requestReward.testDevices = [kGADSimulatorID]
-        GADRewardBasedVideoAd.sharedInstance().load(requestReward, withAdUnitID: "ca-app-pub-8878911622308650/8097706161")
+        GADRewardBasedVideoAd.sharedInstance().load(requestReward, withAdUnitID: "ca-app-pub-8878911622308650/5235741044")
     }
 }
 

@@ -123,7 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-BR-XjA">
-                                <rect key="frame" x="16" y="65.5" width="343" height="296"/>
+                                <rect key="frame" x="16" y="66" width="343" height="295.5"/>
                                 <string key="text">BEYONCE
 TRIVIA</string>
                                 <fontDescription key="fontDescription" name="SteelfishRg-Regular" family="Steelfish" pointSize="123"/>
@@ -322,7 +322,7 @@ TRIVIA</string>
                                 <color key="tintColor" red="0.035751110406091358" green="0.035751110406091358" blue="0.035751110406091358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-Xj-aEQ">
-                                <rect key="frame" x="24" y="197.5" width="327" height="120"/>
+                                <rect key="frame" x="24" y="199.5" width="327" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="j2v-pb-qQ9"/>
                                 </constraints>
@@ -331,7 +331,7 @@ TRIVIA</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="You correctly answered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqU-8y-v3W">
-                                <rect key="frame" x="24" y="158" width="327" height="23.5"/>
+                                <rect key="frame" x="24" y="160" width="327" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Timeless-Normal" family="Timeless" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -340,7 +340,7 @@ TRIVIA</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Good Effort!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sck-Dw-DSg">
-                                <rect key="frame" x="16" y="95" width="343" height="47"/>
+                                <rect key="frame" x="16" y="97" width="343" height="47"/>
                                 <fontDescription key="fontDescription" name="Timeless-Normal" family="Timeless" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -349,7 +349,7 @@ TRIVIA</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Of __ Questions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-JM-zje">
-                                <rect key="frame" x="24" y="317.5" width="327" height="23.5"/>
+                                <rect key="frame" x="24" y="319.5" width="327" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Timeless-Normal" family="Timeless" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -358,7 +358,7 @@ TRIVIA</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" text="More Questions Available!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-Pu-Jmp">
-                                <rect key="frame" x="16" y="491" width="343" height="35"/>
+                                <rect key="frame" x="16" y="483" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="C0m-8q-AEu"/>
                                 </constraints>
@@ -418,12 +418,12 @@ TRIVIA</string>
                             <constraint firstItem="hfR-xj-usn" firstAttribute="centerX" secondItem="9Qo-Hv-HFB" secondAttribute="centerX" id="O4k-Pd-BG2"/>
                             <constraint firstItem="tXh-Pu-Jmp" firstAttribute="leading" secondItem="9Qo-Hv-HFB" secondAttribute="leadingMargin" id="OOi-iz-k8E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Sck-Dw-DSg" secondAttribute="trailing" id="Qgl-yx-Gdi"/>
-                            <constraint firstItem="hfR-xj-usn" firstAttribute="top" secondItem="tXh-Pu-Jmp" secondAttribute="bottom" constant="8" id="SaF-uR-qnR">
+                            <constraint firstItem="hfR-xj-usn" firstAttribute="top" secondItem="tXh-Pu-Jmp" secondAttribute="bottom" constant="16" id="SaF-uR-qnR">
                                 <variation key="heightClass=regular-widthClass=regular" constant="24"/>
                             </constraint>
                             <constraint firstItem="YEh-yf-0xY" firstAttribute="centerX" secondItem="9Qo-Hv-HFB" secondAttribute="centerX" id="T6e-Fb-1ZV"/>
                             <constraint firstItem="BF9-Vi-QMs" firstAttribute="leading" secondItem="9Qo-Hv-HFB" secondAttribute="leading" id="TrF-FL-d7D"/>
-                            <constraint firstItem="tXh-Pu-Jmp" firstAttribute="top" secondItem="jJD-JM-zje" secondAttribute="bottom" constant="150" id="WFT-nF-JhK"/>
+                            <constraint firstItem="tXh-Pu-Jmp" firstAttribute="top" secondItem="jJD-JM-zje" secondAttribute="bottom" constant="140" id="WFT-nF-JhK"/>
                             <constraint firstItem="YEh-yf-0xY" firstAttribute="top" secondItem="hfR-xj-usn" secondAttribute="bottom" constant="16" id="ca0-dw-ymh"/>
                             <constraint firstItem="jJD-JM-zje" firstAttribute="leading" secondItem="9Qo-Hv-HFB" secondAttribute="leadingMargin" constant="8" id="cvd-lG-aer"/>
                             <constraint firstItem="N5f-Xj-aEQ" firstAttribute="leading" secondItem="9Qo-Hv-HFB" secondAttribute="leadingMargin" constant="8" id="eAc-eS-hiH"/>
