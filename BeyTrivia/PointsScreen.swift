@@ -17,6 +17,8 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
     @IBOutlet weak var greeting: UILabel!
     @IBOutlet weak var pointsLbl: UILabel!
     @IBOutlet weak var ofQuestions: UILabel!
+    @IBOutlet weak var shareBtn: RoundButton!
+    
     
     var score: Double = (Double(points)/Double(questionsAllowed))
     
@@ -26,6 +28,11 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            shareBtn.isHidden = true
+        }
+        
         
         //SET-UP & CONFIGURE INTERSTITIAL AD:
         interstitialAd = createAndLoadInterstitial()

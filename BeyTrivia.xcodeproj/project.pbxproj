@@ -56,6 +56,7 @@
 		867EB57B1F64FD1400927006 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB57A1F64FD1400927006 /* Twitter.framework */; };
 		867EB7DC1F66307600927006 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EB7DB1F66307600927006 /* GoogleMobileAds.framework */; };
 		86A39E101EF7067600538F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A39E0F1EF7067600538F4F /* Main.storyboard */; };
+		86AF37A61FB0DAE200E10787 /* danielbd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86AF37A51FB0D7F400E10787 /* danielbd.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		867EB57A1F64FD1400927006 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		867EB7DB1F66307600927006 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		86A39E0F1EF7067600538F4F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		86AF37A51FB0D7F400E10787 /* danielbd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = danielbd.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				8641333B1EF03C4100306792 /* LaunchScreen.storyboard */,
 				8641333E1EF03C4100306792 /* Info.plist */,
 				862587091EF781830007BAD3 /* GoogleService-Info.plist */,
+				86AF37A51FB0D7F400E10787 /* danielbd.ttf */,
 			);
 			path = BeyTrivia;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				860BD75F1F9D2C4D00B3D08E /* AppleGaramond-Light.ttf in Resources */,
 				86109E2A1F9AE6D800097202 /* steelfish rg.ttf in Resources */,
 				86109E2C1F9AEAE200097202 /* BEBAS.ttf in Resources */,
+				86AF37A61FB0DAE200E10787 /* danielbd.ttf in Resources */,
 				860BD7621F9D2DDA00B3D08E /* Timeless.ttf in Resources */,
 				8641333D1EF03C4100306792 /* LaunchScreen.storyboard in Resources */,
 			);
