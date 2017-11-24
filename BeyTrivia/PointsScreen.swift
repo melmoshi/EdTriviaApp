@@ -97,6 +97,8 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
             //Checking if user has facebook
             if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
                 
+                print("STEP ONE")
+                
                 let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
                 
                 post.setInitialText("I scored \(points) out of \(questionsAllowed) points on 'Beyonce Trivia!")
@@ -131,10 +133,15 @@ class PointsScreen: UIViewController, GADInterstitialDelegate {
                     post.add(UIImage(named: "General.jpg"))
                 }
                 
-                //pop-up to say you're not connected!
-                self.showAlert(service: "Facebook")
+                
             }
             
+            //TROUBLESHOOTING
+            print("STEP ONE DID NOT COMPLETE")
+            
+            
+            //pop-up to say you're not connected!
+            self.showAlert(service: "Facebook")
         }
         
         //Second Action
