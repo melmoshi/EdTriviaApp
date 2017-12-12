@@ -14,10 +14,13 @@ var levelChosen: Bool = true  //TRUE MEANS EASY
 var questionsAllowed = 15
 var gamesPlayed = 1
 
+
+
 class HomeScreen: UIViewController, GADBannerViewDelegate {
  
     @IBOutlet weak var maxWarningBtn: RoundButton!
 
+    @IBOutlet weak var edTestHeader: UILabel!
     
     @IBOutlet weak var bannerAd: GADBannerView!
 
@@ -26,6 +29,9 @@ class HomeScreen: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        //THE FOLLOWING IS A TEST:
+        //edTestHeader.text = "beyonce\u{0301}"
         
         loadRewardAd()
         
@@ -125,7 +131,7 @@ func storeDate() {
     
     UserDefaults.standard.set(todaysDate, forKey: "lastSavedDate")
     
-    print("Save date function has been ran")
+    print("Save date function has been ran!")
 }
 
 func checkTodaysDate() -> String {

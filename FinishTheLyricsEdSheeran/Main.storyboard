@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+        <array key="AvenirNextCondensed.ttc">
+            <string>AvenirNextCondensed-DemiBold</string>
+            <string>AvenirNextCondensed-Regular</string>
+        </array>
         <array key="linowrite.ttf">
             <string>LW</string>
         </array>
@@ -37,7 +47,7 @@
                                         <variation key="widthClass=regular" constant="200"/>
                                     </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="120"/>
+                                <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="115"/>
                                 <color key="textColor" red="0.36731237123451188" green="0.28358301931801455" blue="0.75265704314720816" alpha="0.94236943493150682" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -45,7 +55,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Difficulty:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-dW-HvV">
-                                <rect key="frame" x="24" y="294" width="272" height="21"/>
+                                <rect key="frame" x="24" y="317.5" width="272" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,7 +69,7 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B1m-aj-lNg">
-                                <rect key="frame" x="98" y="323" width="124" height="29"/>
+                                <rect key="frame" x="98" y="346.5" width="124" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="vxK-h7-wAV"/>
                                 </constraints>
@@ -73,7 +83,7 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="yZS-B0-OwE">
-                                <rect key="frame" x="45" y="396" width="230" height="29"/>
+                                <rect key="frame" x="45" y="419.5" width="230" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="mn8-Y6-XUi"/>
                                 </constraints>
@@ -88,7 +98,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P23-3o-Q3h" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
-                                <rect key="frame" x="110" y="456" width="100" height="40"/>
+                                <rect key="frame" x="110" y="479.5" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Zdk-Bx-ihD"/>
@@ -103,7 +113,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-Ik-jMl" userLabel="maxWarningBtn" customClass="RoundButton" customModule="EdTrivia" customModuleProvider="target">
-                                <rect key="frame" x="110" y="456" width="100" height="40"/>
+                                <rect key="frame" x="110" y="479.5" width="100" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fy4-UO-gNX"/>
@@ -118,13 +128,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Questions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUn-II-Lfe">
-                                <rect key="frame" x="24" y="367" width="288" height="21"/>
+                                <rect key="frame" x="24" y="390.5" width="288" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS4-WG-k5C">
-                                <rect key="frame" x="26.5" y="184" width="268" height="70"/>
+                                <rect key="frame" x="58.5" y="184" width="204.5" height="93.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="327" id="ERZ-0Q-QcB">
                                         <variation key="widthClass=regular" constant="700"/>
@@ -197,6 +207,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerAd" destination="HYc-gS-GMO" id="ch6-vc-s1A"/>
+                        <outlet property="edTestHeader" destination="aF2-BR-XjA" id="2Lv-8C-rMP"/>
                         <outlet property="maxWarningBtn" destination="yhT-Ik-jMl" id="ey6-4B-Q3T"/>
                     </connections>
                 </viewController>
@@ -449,6 +460,7 @@
                         <outlet property="greeting" destination="Sck-Dw-DSg" id="hUW-L4-x2f"/>
                         <outlet property="ofQuestions" destination="jJD-JM-zje" id="e4i-8J-e5A"/>
                         <outlet property="pointsLbl" destination="N5f-Xj-aEQ" id="14j-L6-gqf"/>
+                        <outlet property="shareBtn" destination="YEh-yf-0xY" id="hmC-A5-42J"/>
                         <segue destination="VJg-9d-YjB" kind="show" identifier="TryAgainSegue" id="X1W-ad-bgi"/>
                     </connections>
                 </viewController>
@@ -680,7 +692,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-5A-T64">
-                            <rect key="frame" x="36.5" y="183.5" width="200" height="120"/>
+                            <rect key="frame" x="36.5" y="190" width="200" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="Vag-PE-tdL"/>
                                 <constraint firstAttribute="height" constant="120" id="uC9-S4-BD2"/>
@@ -693,7 +705,7 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY6-Qk-zmL">
-                            <rect key="frame" x="86" y="311.5" width="101" height="27"/>
+                            <rect key="frame" x="88.5" y="318" width="96" height="32"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="17"/>
                             <state key="normal" title="Watch Video">
                                 <color key="titleColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -703,13 +715,13 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks For Enjoying!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dln-MR-cln">
-                            <rect key="frame" x="17" y="24" width="239" height="20.5"/>
+                            <rect key="frame" x="29.5" y="24" width="215.5" height="27"/>
                             <fontDescription key="fontDescription" name="LW" family="Linowrite" pointSize="23"/>
                             <color key="textColor" red="0.0039215686269999999" green="0.69411764710000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EdGuitar" translatesAutoresizingMaskIntoConstraints="NO" id="P5U-i3-Rjd">
-                            <rect key="frame" x="46" y="68.5" width="181" height="97"/>
+                            <rect key="frame" x="46" y="75" width="181" height="97"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="97" id="FEQ-GM-rvR"/>
                                 <constraint firstAttribute="width" constant="181" id="Yrn-OO-lo1"/>
@@ -737,7 +749,7 @@ To play again, please watch a sponsored advertisment or come back tomorrow. </st
         <image name="EdSheeranBackground" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="X1W-ad-bgi"/>
         <segue reference="oPk-L0-H4t"/>
-        <segue reference="bGh-iF-D4C"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -102,7 +102,8 @@ func parseCSV (csv: String) {
         let newWrong2 = (questions[x].wrong2).replacingOccurrences(of: "=", with: ",")
         let newWrong3 = (questions[x].wrong3).replacingOccurrences(of: "=", with: ",")
         let newWrong4 = (questions[x].wrong4).replacingOccurrences(of: "=", with: ",")
-        
+    
+
         let newPack = Question(question: newQuestion, answer: newAnswer, wrong1: newWrong1, wrong2: newWrong2, wrong3: newWrong3, wrong4: newWrong4)
         
         

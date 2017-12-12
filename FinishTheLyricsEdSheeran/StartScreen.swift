@@ -113,11 +113,13 @@ class StartScreen: UIViewController {
             print("RIGHT")
             points += 1
             accuracy = true
+            disableButtons()
             sender.backgroundColor = UIColor(red: 192/255, green: 216/255, blue: 155/255, alpha: 0.5)
             
         } else {
             print("WRONG!!!!!!")
             accuracy = false
+            disableButtons()
             sender.backgroundColor = UIColor(red: 255/255, green: 99/255, blue: 71/255, alpha: 0.6)
         }
         
@@ -130,6 +132,7 @@ class StartScreen: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.newQuestion()
                 self.backgroundColorNormal()
+                self.enableButtons()
             }
             
             
@@ -153,6 +156,19 @@ class StartScreen: UIViewController {
         
     }
 
+    func disableButtons() {
+        btn1.isEnabled = false
+        btn2.isEnabled = false
+        btn3.isEnabled = false
+        btn4.isEnabled = false
+    }
+    
+    func enableButtons(){
+        btn1.isEnabled = true
+        btn2.isEnabled = true
+        btn3.isEnabled = true
+        btn4.isEnabled = true
+    }
     
 }
 
